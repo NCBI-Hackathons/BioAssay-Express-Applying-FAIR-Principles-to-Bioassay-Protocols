@@ -1,0 +1,267 @@
+Hackathon 2019 BioIT World
+
+- formally committed to the 5 templates
+- PMCID as uniqueID
+- DOI link as distinguisher (optional for external data)
+- each on a template with {N} categories... 
+	... some terms for known things
+	... as well as the absence types (missing, etc.) and "requires term" (add text)
+
+MIAME (2001): Minimum information about a microarray experiment
+
+	1. Experimental design: the set of hybridization experiments as a whole
+	2. Array design: each array used and each element (spot, feature) on the array
+	3. Samples: samples used, extract preparation and labeling 
+	4. Hybridizations: procedures and parameters
+	5. Measurements: images, quantification and specifications 
+	6. Normalization controls: types, values and specifications
+
+	(paper doesn't drill down any further...)
+
+MIFlowCyt (2008): Minimum Information About a Flow Cytometry Experiment
+
+	1. Experiment overview
+		a. Purpose/goal/hypothesis 
+		b. Experiment variables 
+		c. Conclusions
+		d. Quality control
+	2. Flow sample (specimen)
+		a. Material 
+		b. Source/organism/location 
+		c. Treatment 
+		d. Reagent/analyte/detector/reporter 
+	3. Data analysis
+		a. List-mode data
+		b. Compensation
+		c. Gating
+		d. Descriptive statistics
+	4. Instrument details
+		a. Instrument identification
+		b. Fluidics configuration
+		c. Optical configuration
+		d. Electronic configuration
+
+MISFISHIE (2008): Minimum information specification for in situ hybridization and immunohistochemistry experiments
+
+	1. Experiment design
+		a. Experiment description
+		b. Assay type(s) (IHC, ISH, GFP, etc.)
+		c. Experimental design (multiple reporter survey, specimen variation)
+		d. Experimental factors (variables in assays such as reporter or specimen, etc.)
+		e. (optional) URL for more information
+		f. Contact information
+	2. Biomaterials and treatments
+		a. Attributes of the individual (organism, sex, strain, line, developmental stage, age, etc.)
+		b. Physiologic state (e.g., normal versus disease)
+		c. Relevant exogenous factors (treatment, special diet, etc.)
+		d. Anatomic source of specimens
+		e. Provider of the specimens
+		f. Assay preparation protocol (enough to reproduce?)
+	3. Reporter (probe or antibody) information
+		a. Unambiguous reporter identification, ideally genomic
+		b. Full sequence or clone ID of the reporters
+		c. Protocol for obtaining exact reporter (purchase from_____, create, etc.)
+		d. Other important attributes (mono- or polyclonal, generating organism, etc.)
+	4. Staining protocols and parameters
+		a. Detection method (number of reporters, detection reagent and systems)
+		b. Staining protocol (enough to reproduce?)
+		c. Details about positive and negative controls
+	5. Imaging data and parameters
+		a. The digital images for each assay (can download to your computer and explore?)
+		b. Detection method
+		c. (optional) Control images and imaging acquisition protocol
+	6. Image characterizations
+		a. Definition of structural units (from ontology or manual definition)
+		b. Definition of intensity scale
+		c. Characterization of results in tabular form (digital or printed)
+		d. (optional) Characterization protocol
+
+MIQE (2009): Minimum Information for Publication of Quantitative Real-Time PCR Experiments
+
+	1. Experimental design
+		a. Definition of experimental and control groups
+		b. Number within each group
+		c. (optional) Assay carried out by the core or investigator’s laboratory?
+		d. (optional) Acknowledgment of authors’ contributions
+	2. Sample
+		a. Description
+		b. (optional) Volume/mass of sample processed
+		c. Microdissection or macrodissection
+		d. Processing procedure
+		e. If frozen, how and how quickly?
+		f. If fixed, with what and how quickly?
+		g. Sample storage conditions and duration (especially for FFPEb samples)
+	3. Nucleic acid extraction
+		a. Procedure and/or instrumentation
+		b. Name of kit and details of any modifications
+		c. (optional) Source of additional reagents used
+		d. Details of DNase or RNase treatment
+		e. Contamination assessment (DNA or RNA)
+		f. Nucleic acid quantification
+		g. Instrument and method
+		h. (optional) Purity (A260/A280)
+		i. (optional) Yield
+		j. RNA integrity: method/instrument
+		k. RIN/RQI or Cq of 3􏰁 and 5􏰁 transcripts Electrophoresis traces
+		l. (optional) Inhibition testing (Cq dilutions, spike, or other)
+	4. Reverse transcription
+		a. Complete reaction conditions
+		b. Amount of RNA and reaction volume
+		c. Priming oligonucleotide (if using GSP) and concentration
+		d. Reverse transcriptase and concentration
+		e. Temperature and time
+		f. (optional) Manufacturer of reagents and catalogue numbers
+		g. (optional) Cqs with and without reverse transcription
+		h. (optional) Storage conditions of cDNA
+	5. qPCR target information
+		a. Gene symbol
+		b. Sequence accession number
+		c. (optional) Location of amplicon
+		d. Amplicon length
+		e. In silico specificity screen (BLAST, and so on)
+		f. (optional) Pseudogenes, retropseudogenes, or other homologs?
+		g. (optional) Sequence alignment
+		h. (optional) Secondary structure analysis of amplicon
+		i. Location of each primer by exon or intron (if applicable)
+		j. What splice variants are targeted?
+	6. qPCR oligonucleotides
+		a. Primer sequences
+		b. (optional) RTPrimerDB identification number
+		c. (optional) Probe sequences
+		d. Location and identity of any modifications
+		e. (optional) Manufacturer of oligonucleotides
+		f. (optional) Purification method
+	7. qPCR protocol
+		a. Complete reaction conditions
+		b. Reaction volume and amount of cDNA/DNA
+		c. Primer, (probe), Mg2􏰀, and dNTP concentrations
+		e  Polymerase identity and concentration
+		f. Buffer/kit identity and manufacturer
+		g. (optional) Exact chemical composition of the buffer
+		h. Additives (SYBR Green I, DMSO, and so forth)
+		i. (optional) Manufacturer of plates/tubes and catalog number
+		j. Complete thermocycling parameters
+		k. (optional) Reaction setup (manual/robotic)
+		l. Manufacturer of qPCR instrument
+	8. qPCR validation
+		a. (optional) Evidence of optimization (from gradients)
+		b. Specificity (gel, sequence, melt, or digest)
+		c. For SYBR Green I, Cq of the NTC
+		d. Calibration curves with slope and y intercept
+		e. PCR efficiency calculated from slope
+		f. (optional) CIs for PCR efficiency or SE
+		g. r2 of calibration curve
+		h. Linear dynamic range
+		i. Cq variation at LOD
+		j. (optional) CIs throughout range
+		k. Evidence for LOD
+		l. If multiplex, efficiency and LOD of each assay
+	9. Data analysis
+		a. qPCR analysis program (source, version)
+		b. Method of Cq determination
+		c. Outlier identification and disposition
+		d. Results for NTCs
+		e. Justification of number and choice of reference genes
+		f. Description of normalization method
+		g. (optional) Number and concordance of biological replicates
+		h. Number and stage (reverse transcription or qPCR) of technical replicates
+		i. Repeatability (intraassay variation)
+		j. (optional) Reproducibility (interassay variation, CV)
+		k. (optional) Power analysis
+		l. Statistical methods for results significance
+		m. Software (source, version)
+		n. (optional) Cq or raw data submission with RDML
+
+	... should probably remove the optional cases, so it's not too overwhelming
+
+MIARE (2011): Minimum Information About an RNAi Experiment
+
+	1. Assay description:
+		a. Assay ID
+		b. Assay name
+		c. Assay type (primary/confirmatory/other)
+		d. Target organism (Taxonomy ID)
+		e. Number of distinct genes targeted for knock-down
+		f. Primary contact information
+		g. Experimental description
+		h. Experiment title
+	2. Assay protocol
+		a. Biological question description - (including sample description and keywords)
+		b. Assay protocol and design -(including number and description of replicates (biological/technical)
+		c. Pre- and post-treatment (protocol/type/compound)
+		d. Bio-material manipulations (including growth conditions/cell culture conditions and if applicable cell separation technique)
+		e. Number of cells per well
+		f. Compound(s) name (if applicable)
+		g. Assay reagent name
+		h. Assay reagent manufacturer
+		i. Instrument (repeat this section for each instrument used)
+		j. Instrument name
+		k. Instrument manufacturer 
+		l. Type of readout
+		m. Instrument settings
+	3. Delivery
+		a. Delivery type and protocol
+		b. Percentage of cell confluence (if applicable) 
+		c. Complexing protocol
+		d. Complexing Time
+		e. Delivery reagent
+		f. Delivery reagent type
+		g. Delivery reagent manufacturer
+		h. Delivery reagent name
+		i. Delivery reagent final concentration
+		j. Silencing reagent final concentration
+	4. Silencing RNA reagent (Substance)
+		a. Silencing RNA reagent ID
+		b. Probe ID (if applicable)
+		c. Target gene ID or accession number (NCBI/EMBL/DDBJ)
+		d. Target gene name (if available)
+		e. Silencing RNA reagent sequence(s) (if available, cross-reference to GenBank ID)
+		f. Silencing RNA reagent library description (provider/version number)
+		g. Silencing RNA reagent type (if applicable)
+		h. Unique silencing RNA molecules per reagent pool (if applicable) 
+		i. Modification(s) to silencing RNA reagent (if applicable)
+		j. Taxonomy ID
+		k. Vector/Plasmid reference (if applicable)
+		m. Comments
+	5. Assay plate description
+		a. Assay plate manufacturer 
+		b. Assay plate type
+		c. Assay plate
+		d. Media changes
+		e. Media composition
+		f. Time of media change
+	6. Results
+		a. Data analysis
+		b. Bioactivity outcome threshold
+		c. Bioactivity score assignment method
+		d. Data normalisation method
+		e. Artefacts
+		f. Data filtering description
+		g. Data transformation details
+		h. Analysis program
+		i. Analysis script description
+		j. Analysis Software (name/version)
+		k. Quantitative data
+		l. Description of quantified data
+		m. Qualitative data
+		n. Description of qualitative data
+	7. Result Definitions
+		a. Data column definitions for assay results
+		b. Name
+		c. Data type (float, integer, string or NCBI Entrez database ID) 
+		d. Unit
+		d. Description
+		d. Constraint (min, max, range or set of values)
+	8. Data
+		a. Quantitative data
+		b. Unprocessed quantified data (raw data, if applicable)
+		c. Normalised quantified data
+		d. Scored data
+		e. Bioactivity outcome (active/inactive/inconclusive)
+		f. Qualitative data
+		g. Qualitative data
+
+	... much of the header info can be pruned
+
+
+

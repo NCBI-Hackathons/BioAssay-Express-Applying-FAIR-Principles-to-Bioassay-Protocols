@@ -1,0 +1,986 @@
+@prefix : <http://purl.obolibrary.org/obo/zfs.owl#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix zfs: <http://purl.obolibrary.org/obo/zfs#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@base <http://purl.obolibrary.org/obo/zfs.owl> .
+
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/IAO_0000115
+obo:IAO_0000115 rdf:type owl:AnnotationProperty ;
+                rdfs:label "definition"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/zfs#PLURAL
+zfs:PLURAL rdf:type owl:AnnotationProperty ;
+           rdfs:label "PLURAL"^^xsd:string ;
+           rdfs:subPropertyOf oboInOwl:SynonymTypeProperty .
+
+
+###  http://purl.obolibrary.org/obo/zfs#granular_stage
+zfs:granular_stage rdf:type owl:AnnotationProperty ;
+                   rdfs:comment "Subset consisting of classes describing highly granular developmental stages (for instance, '23-year-old'). Such stages might be useful for annotation purpose, but might be folded into less granular parents for display purpose."^^xsd:string ;
+                   rdfs:subPropertyOf oboInOwl:SubsetProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#SubsetProperty
+oboInOwl:SubsetProperty rdf:type owl:AnnotationProperty ;
+                        rdfs:label "subset_property"^^xsd:string .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty
+oboInOwl:SynonymTypeProperty rdf:type owl:AnnotationProperty ;
+                             rdfs:label "synonym_type_property"^^xsd:string .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#auto-generated-by
+oboInOwl:auto-generated-by rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#created_by
+oboInOwl:created_by rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#creation_date
+oboInOwl:creation_date rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#date
+oboInOwl:date rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#default-namespace
+oboInOwl:default-namespace rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasDbXref
+oboInOwl:hasDbXref rdf:type owl:AnnotationProperty ;
+                   rdfs:label "database_cross_reference"^^xsd:string .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion
+oboInOwl:hasOBOFormatVersion rdf:type owl:AnnotationProperty ;
+                             rdfs:label "has_obo_format_version"^^xsd:string .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasOBONamespace
+oboInOwl:hasOBONamespace rdf:type owl:AnnotationProperty ;
+                         rdfs:label "has_obo_namespace"^^xsd:string .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#id
+oboInOwl:id rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#saved-by
+oboInOwl:saved-by rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#shorthand
+oboInOwl:shorthand rdf:type owl:AnnotationProperty ;
+                   rdfs:label "shorthand"^^xsd:string .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000050
+obo:BFO_0000050 rdf:type owl:ObjectProperty ,
+                         owl:TransitiveProperty ;
+                oboInOwl:hasDbXref "BFO:0000050"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_anatomical_ontology"^^xsd:string ;
+                oboInOwl:id "part_of"^^xsd:string ;
+                oboInOwl:shorthand "part_of"^^xsd:string ;
+                rdfs:label "part of"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000062
+obo:BFO_0000062 rdf:type owl:ObjectProperty ,
+                         owl:TransitiveProperty ;
+                obo:IAO_0000115 "X preceded_by Y iff: end(Y) before_or_simultaneous_with start(X)"^^xsd:string ;
+                oboInOwl:hasDbXref "BFO:0000062"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_anatomical_ontology"^^xsd:string ;
+                oboInOwl:id "preceded_by"^^xsd:string ;
+                oboInOwl:shorthand "preceded_by"^^xsd:string ;
+                rdfs:label "preceded_by"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002087
+obo:RO_0002087 rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf obo:BFO_0000062 ;
+               obo:IAO_0000115 "X immediately_preceded_by Y iff: end(X) simultaneous_with start(Y)"^^xsd:string ;
+               oboInOwl:hasDbXref "RO:0002087"^^xsd:string ;
+               oboInOwl:hasOBONamespace "zebrafish_anatomical_ontology"^^xsd:string ;
+               oboInOwl:id "immediately_preceded_by"^^xsd:string ;
+               oboInOwl:shorthand "immediately_preceded_by"^^xsd:string ;
+               rdfs:label "immediately_preceded_by"^^xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/ZFS_0000000
+obo:ZFS_0000000 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ;
+                oboInOwl:hasDbXref "ZFIN:ZDB-STAGE-050211-1"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000000"^^xsd:string ;
+                rdfs:label "Unknown"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000001
+obo:ZFS_0000001 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ;
+                oboInOwl:hasDbXref "ZFIN:ZDB-STAGE-010723-4"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000001"^^xsd:string ;
+                rdfs:label "Zygote:1-cell"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000002
+obo:ZFS_0000002 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:ZFS_0000046
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000001
+                                ] ;
+                oboInOwl:hasDbXref "ZFIN:ZDB-STAGE-010723-15"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000002"^^xsd:string ;
+                rdfs:label "Cleavage:2-cell"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000003
+obo:ZFS_0000003 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:ZFS_0000046
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000002
+                                ] ;
+                oboInOwl:hasDbXref "ZFIN:ZDB-STAGE-010723-11"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000003"^^xsd:string ;
+                rdfs:label "Cleavage:4-cell"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000004
+obo:ZFS_0000004 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:ZFS_0000046
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000003
+                                ] ;
+                oboInOwl:hasDbXref "ZFIN:ZDB-STAGE-010723-33"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000004"^^xsd:string ;
+                rdfs:label "Cleavage:8-cell"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000005
+obo:ZFS_0000005 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:ZFS_0000046
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000004
+                                ] ;
+                oboInOwl:hasDbXref "ZFIN:ZDB-STAGE-010723-20"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000005"^^xsd:string ;
+                rdfs:label "Cleavage:16-cell"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000006
+obo:ZFS_0000006 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:ZFS_0000046
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000005
+                                ] ;
+                oboInOwl:hasDbXref "ZFIN:ZDB-STAGE-010723-25"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000006"^^xsd:string ;
+                rdfs:label "Cleavage:32-cell"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000007
+obo:ZFS_0000007 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:ZFS_0000046
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000006
+                                ] ;
+                oboInOwl:hasDbXref "ZFIN:ZDB-STAGE-010723-28"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000007"^^xsd:string ;
+                rdfs:label "Cleavage:64-cell"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000008
+obo:ZFS_0000008 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:ZFS_0000045
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000007
+                                ] ;
+                oboInOwl:hasDbXref "ZFIN:ZDB-STAGE-010723-7"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000008"^^xsd:string ;
+                rdfs:label "Blastula:128-cell"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000009
+obo:ZFS_0000009 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:ZFS_0000045
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000008
+                                ] ;
+                oboInOwl:hasDbXref "ZFIN:ZDB-STAGE-010723-1"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000009"^^xsd:string ;
+                rdfs:label "Blastula:256-cell"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000010
+obo:ZFS_0000010 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:ZFS_0000045
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000009
+                                ] ;
+                oboInOwl:hasDbXref "ZFIN:ZDB-STAGE-010723-14"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000010"^^xsd:string ;
+                rdfs:label "Blastula:512-cell"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000011
+obo:ZFS_0000011 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:ZFS_0000045
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000010
+                                ] ;
+                oboInOwl:hasDbXref "ZFIN:ZDB-STAGE-010723-22"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000011"^^xsd:string ;
+                rdfs:label "Blastula:1k-cell"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000012
+obo:ZFS_0000012 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:ZFS_0000045
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000011
+                                ] ;
+                oboInOwl:hasDbXref "ZFIN:ZDB-STAGE-010723-27"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000012"^^xsd:string ;
+                rdfs:label "Blastula:High"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000013
+obo:ZFS_0000013 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:ZFS_0000045
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000012
+                                ] ;
+                oboInOwl:hasDbXref "ZFIN:ZDB-STAGE-010723-24"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000013"^^xsd:string ;
+                rdfs:label "Blastula:Oblong"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000014
+obo:ZFS_0000014 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:ZFS_0000045
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000013
+                                ] ;
+                oboInOwl:hasDbXref "ZFIN:ZDB-STAGE-010723-21"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000014"^^xsd:string ;
+                rdfs:label "Blastula:Sphere"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000015
+obo:ZFS_0000015 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:ZFS_0000045
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000014
+                                ] ;
+                oboInOwl:hasDbXref "ZFIN:ZDB-STAGE-010723-19"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000015"^^xsd:string ;
+                rdfs:label "Blastula:Dome"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000016
+obo:ZFS_0000016 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:ZFS_0000045
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000015
+                                ] ;
+                oboInOwl:hasDbXref "ZFIN:ZDB-STAGE-010723-17"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000016"^^xsd:string ;
+                rdfs:label "Blastula:30%-epiboly"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000017
+obo:ZFS_0000017 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:ZFS_0000047
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000016
+                                ] ;
+                oboInOwl:hasDbXref "ZFIN:ZDB-STAGE-010723-6"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000017"^^xsd:string ;
+                rdfs:label "Gastrula:50%-epiboly"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000018
+obo:ZFS_0000018 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:ZFS_0000047
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000017
+                                ] ;
+                oboInOwl:hasDbXref "ZFIN:ZDB-STAGE-010723-3"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000018"^^xsd:string ;
+                rdfs:label "Gastrula:Germ-ring"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000019
+obo:ZFS_0000019 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:ZFS_0000047
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000018
+                                ] ;
+                oboInOwl:hasDbXref "ZFIN:ZDB-STAGE-010723-2"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000019"^^xsd:string ;
+                rdfs:label "Gastrula:Shield"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000020
+obo:ZFS_0000020 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:ZFS_0000047
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000019
+                                ] ;
+                oboInOwl:hasDbXref "ZFIN:ZDB-STAGE-010723-18"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000020"^^xsd:string ;
+                rdfs:label "Gastrula:75%-epiboly"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000021
+obo:ZFS_0000021 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:ZFS_0000047
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000020
+                                ] ;
+                oboInOwl:hasDbXref "ZFIN:ZDB-STAGE-010723-29"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000021"^^xsd:string ;
+                rdfs:label "Gastrula:90%-epiboly"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000022
+obo:ZFS_0000022 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:ZFS_0000047
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000021
+                                ] ;
+                oboInOwl:hasDbXref "ZFIN:ZDB-STAGE-010723-12"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000022"^^xsd:string ;
+                rdfs:label "Gastrula:Bud"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000023
+obo:ZFS_0000023 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:ZFS_0000049
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000022
+                                ] ;
+                oboInOwl:hasDbXref "ZFIN:ZDB-STAGE-010723-23"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000023"^^xsd:string ;
+                rdfs:label "Segmentation:1-4 somites"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000024
+obo:ZFS_0000024 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:ZFS_0000049
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000023
+                                ] ;
+                oboInOwl:hasDbXref "ZFIN:ZDB-STAGE-010723-5"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000024"^^xsd:string ;
+                rdfs:label "Segmentation:5-9 somites"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000025
+obo:ZFS_0000025 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:ZFS_0000049
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000024
+                                ] ;
+                oboInOwl:hasDbXref "ZFIN:ZDB-STAGE-020626-1"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000025"^^xsd:string ;
+                rdfs:label "Segmentation:10-13 somites"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000026
+obo:ZFS_0000026 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:ZFS_0000049
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000025
+                                ] ;
+                oboInOwl:hasDbXref "ZFIN:ZDB-STAGE-010723-30"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000026"^^xsd:string ;
+                rdfs:label "Segmentation:14-19 somites"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000027
+obo:ZFS_0000027 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:ZFS_0000049
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000026
+                                ] ;
+                oboInOwl:hasDbXref "ZFIN:ZDB-STAGE-010723-16"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000027"^^xsd:string ;
+                rdfs:label "Segmentation:20-25 somites"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000028
+obo:ZFS_0000028 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:ZFS_0000049
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000027
+                                ] ;
+                oboInOwl:hasDbXref "ZFIN:ZDB-STAGE-010723-34"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000028"^^xsd:string ;
+                rdfs:label "Segmentation:26+ somites"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000029
+obo:ZFS_0000029 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:ZFS_0000050
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000028
+                                ] ;
+                oboInOwl:hasDbXref "ZFIN:ZDB-STAGE-010723-10"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000029"^^xsd:string ;
+                rdfs:label "Pharyngula:Prim-5"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000030
+obo:ZFS_0000030 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:ZFS_0000050
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000029
+                                ] ;
+                oboInOwl:hasDbXref "ZFIN:ZDB-STAGE-010723-32"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000030"^^xsd:string ;
+                rdfs:label "Pharyngula:Prim-15"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000031
+obo:ZFS_0000031 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:ZFS_0000050
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000030
+                                ] ;
+                oboInOwl:hasDbXref "ZFIN:ZDB-STAGE-010723-13"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000031"^^xsd:string ;
+                rdfs:label "Pharyngula:Prim-25"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000032
+obo:ZFS_0000032 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:ZFS_0000050
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000031
+                                ] ;
+                oboInOwl:hasDbXref "ZFIN:ZDB-STAGE-010723-31"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000032"^^xsd:string ;
+                rdfs:label "Pharyngula:High-pec"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000033
+obo:ZFS_0000033 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:ZFS_0007000
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000032
+                                ] ;
+                oboInOwl:hasDbXref "ZFIN:ZDB-STAGE-010723-9"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000033"^^xsd:string ;
+                rdfs:label "Hatching:Long-pec"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000034
+obo:ZFS_0000034 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:ZFS_0007000
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000033
+                                ] ;
+                oboInOwl:hasDbXref "ZFIN:ZDB-STAGE-010723-26"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000034"^^xsd:string ;
+                rdfs:label "Hatching:Pec-fin"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000035
+obo:ZFS_0000035 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:ZFS_0000048
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000034
+                                ] ;
+                oboInOwl:hasDbXref "ZFIN:ZDB-STAGE-010723-8"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000035"^^xsd:string ;
+                rdfs:label "Larval:Protruding-mouth"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000036
+obo:ZFS_0000036 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:ZFS_0000048
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000035
+                                ] ;
+                oboInOwl:hasDbXref "ZFIN:ZDB-STAGE-010723-35"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000036"^^xsd:string ;
+                rdfs:label "Larval:Day 4"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000037
+obo:ZFS_0000037 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:ZFS_0000048
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000036
+                                ] ;
+                oboInOwl:hasDbXref "ZFIN:ZDB-STAGE-010723-36"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000037"^^xsd:string ;
+                rdfs:label "Larval:Day 5"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000038
+obo:ZFS_0000038 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:ZFS_0000048
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000037
+                                ] ;
+                oboInOwl:hasDbXref "ZFIN:ZDB-STAGE-010723-37"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000038"^^xsd:string ;
+                rdfs:label "Larval:Day 6"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000039
+obo:ZFS_0000039 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:ZFS_0000048
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000038
+                                ] ;
+                oboInOwl:hasDbXref "ZFIN:ZDB-STAGE-010723-47"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000039"^^xsd:string ;
+                rdfs:label "Larval:Days 7-13"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000040
+obo:ZFS_0000040 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:ZFS_0000048
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000039
+                                ] ;
+                oboInOwl:hasDbXref "ZFIN:ZDB-STAGE-010723-48"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000040"^^xsd:string ;
+                rdfs:label "Larval:Days 14-20"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000041
+obo:ZFS_0000041 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:ZFS_0000048
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000040
+                                ] ;
+                oboInOwl:hasDbXref "ZFIN:ZDB-STAGE-010723-49"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000041"^^xsd:string ;
+                rdfs:label "Larval:Days 21-29"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000042
+obo:ZFS_0000042 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:ZFS_0000051
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000041
+                                ] ;
+                oboInOwl:hasDbXref "ZFIN:ZDB-STAGE-010723-51"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000042"^^xsd:string ;
+                rdfs:label "Juvenile:Days 30-44"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000043
+obo:ZFS_0000043 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:ZFS_0000051
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000042
+                                ] ;
+                oboInOwl:hasDbXref "ZFIN:ZDB-STAGE-010723-52"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000043"^^xsd:string ;
+                rdfs:label "Juvenile:Days 45-89"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000044
+obo:ZFS_0000044 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000043
+                                ] ;
+                oboInOwl:hasDbXref "ZFIN:ZDB-STAGE-010723-39"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000044"^^xsd:string ;
+                rdfs:label "adult"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000045
+obo:ZFS_0000045 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000046
+                                ] ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000045"^^xsd:string ;
+                rdfs:label "blastula"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000046
+obo:ZFS_0000046 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000046"^^xsd:string ;
+                rdfs:label "cleavage"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000047
+obo:ZFS_0000047 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000045
+                                ] ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000047"^^xsd:string ;
+                rdfs:label "gastrula"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000048
+obo:ZFS_0000048 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0007000
+                                ] ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000048"^^xsd:string ;
+                rdfs:label "larva"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000049
+obo:ZFS_0000049 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000047
+                                ] ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000049"^^xsd:string ;
+                rdfs:label "segmentation"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000050
+obo:ZFS_0000050 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000049
+                                ] ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000050"^^xsd:string ;
+                rdfs:label "pharyngula"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0000051
+obo:ZFS_0000051 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000048
+                                ] ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0000051"^^xsd:string ;
+                rdfs:label "juvenile"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0007000
+obo:ZFS_0007000 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ZFS_0100000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002087 ;
+                                  owl:someValuesFrom obo:ZFS_0000050
+                                ] ;
+                oboInOwl:created_by "yvonne"^^xsd:string ;
+                oboInOwl:creation_date "2014-11-05T08:33:09Z"^^xsd:string ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0007000"^^xsd:string ;
+                rdfs:label "hatching"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/ZFS_0100000
+obo:ZFS_0100000 rdf:type owl:Class ;
+                oboInOwl:hasOBONamespace "zebrafish_stages"^^xsd:string ;
+                oboInOwl:id "ZFS:0100000"^^xsd:string ;
+                rdfs:label "zebrafish stage"^^xsd:string .
+
+
+###  Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi

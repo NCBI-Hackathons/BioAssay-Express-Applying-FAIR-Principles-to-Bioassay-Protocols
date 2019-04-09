@@ -1,0 +1,2478 @@
+@prefix : <http://purl.obolibrary.org/obo/xao.owl#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xao: <http://purl.obolibrary.org/obo/xao#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@base <http://purl.obolibrary.org/obo/xao.owl> .
+
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/IAO_0000115
+obo:IAO_0000115 rdf:type owl:AnnotationProperty ;
+                rdfs:label "definition"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000231
+obo:IAO_0000231 rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0100001
+obo:IAO_0100001 rdf:type owl:AnnotationProperty ;
+                rdfs:label "term replaced by"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/xao#PLURAL
+xao:PLURAL rdf:type owl:AnnotationProperty ;
+           rdfs:label "PLURAL"^^xsd:string ;
+           rdfs:subPropertyOf oboInOwl:SynonymTypeProperty .
+
+
+###  http://purl.obolibrary.org/obo/xao#anatomical_site_slim
+xao:anatomical_site_slim rdf:type owl:AnnotationProperty ;
+                         rdfs:comment "Anatomical Site slim"^^xsd:string ;
+                         rdfs:subPropertyOf oboInOwl:SubsetProperty .
+
+
+###  http://purl.obolibrary.org/obo/xao#frequent_anatomy_items
+xao:frequent_anatomy_items rdf:type owl:AnnotationProperty ;
+                           rdfs:comment "Frequently Used Anatomy slim"^^xsd:string ;
+                           rdfs:subPropertyOf oboInOwl:SubsetProperty .
+
+
+###  http://purl.obolibrary.org/obo/xao#organism_views
+xao:organism_views rdf:type owl:AnnotationProperty ;
+                   rdfs:comment "Organism View slim"^^xsd:string ;
+                   rdfs:subPropertyOf oboInOwl:SubsetProperty .
+
+
+###  http://purl.obolibrary.org/obo/xao#sectional_anatomy_items
+xao:sectional_anatomy_items rdf:type owl:AnnotationProperty ;
+                            rdfs:comment "Sectional Anatomy Item slim"^^xsd:string ;
+                            rdfs:subPropertyOf oboInOwl:SubsetProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#NamespaceIdRule
+oboInOwl:NamespaceIdRule rdf:type owl:AnnotationProperty ;
+                         rdfs:label "namespace-id-rule"^^xsd:string .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#SubsetProperty
+oboInOwl:SubsetProperty rdf:type owl:AnnotationProperty ;
+                        rdfs:label "subset_property"^^xsd:string .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty
+oboInOwl:SynonymTypeProperty rdf:type owl:AnnotationProperty ;
+                             rdfs:label "synonym_type_property"^^xsd:string .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#consider
+oboInOwl:consider rdf:type owl:AnnotationProperty ;
+                  rdfs:label "consider"^^xsd:string .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#created_by
+oboInOwl:created_by rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#creation_date
+oboInOwl:creation_date rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#date
+oboInOwl:date rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#default-namespace
+oboInOwl:default-namespace rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasAlternativeId
+oboInOwl:hasAlternativeId rdf:type owl:AnnotationProperty ;
+                          rdfs:label "has_alternative_id"^^xsd:string .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym
+oboInOwl:hasBroadSynonym rdf:type owl:AnnotationProperty ;
+                         rdfs:label "has_broad_synonym"^^xsd:string .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasDbXref
+oboInOwl:hasDbXref rdf:type owl:AnnotationProperty ;
+                   rdfs:label "database_cross_reference"^^xsd:string .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+oboInOwl:hasExactSynonym rdf:type owl:AnnotationProperty ;
+                         rdfs:label "has_exact_synonym"^^xsd:string .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym
+oboInOwl:hasNarrowSynonym rdf:type owl:AnnotationProperty ;
+                          rdfs:label "has_narrow_synonym"^^xsd:string .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion
+oboInOwl:hasOBOFormatVersion rdf:type owl:AnnotationProperty ;
+                             rdfs:label "has_obo_format_version"^^xsd:string .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasOBONamespace
+oboInOwl:hasOBONamespace rdf:type owl:AnnotationProperty ;
+                         rdfs:label "has_obo_namespace"^^xsd:string .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym
+oboInOwl:hasRelatedSynonym rdf:type owl:AnnotationProperty ;
+                           rdfs:label "has_related_synonym"^^xsd:string .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasSynonymType
+oboInOwl:hasSynonymType rdf:type owl:AnnotationProperty ;
+                        rdfs:label "has_synonym_type"^^xsd:string .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#id
+oboInOwl:id rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#inSubset
+oboInOwl:inSubset rdf:type owl:AnnotationProperty ;
+                  rdfs:label "in_subset"^^xsd:string .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#saved-by
+oboInOwl:saved-by rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#shorthand
+oboInOwl:shorthand rdf:type owl:AnnotationProperty ;
+                   rdfs:label "shorthand"^^xsd:string .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#treat-xrefs-as-genus-differentia
+oboInOwl:treat-xrefs-as-genus-differentia rdf:type owl:AnnotationProperty ;
+                                          rdfs:label "treat-xrefs-as-genus-differentia"^^xsd:string .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#deprecated
+owl:deprecated rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000050
+obo:BFO_0000050 rdf:type owl:ObjectProperty ,
+                         owl:TransitiveProperty ;
+                oboInOwl:hasDbXref "BFO:0000050"^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_anatomy"^^xsd:string ;
+                oboInOwl:id "part_of"^^xsd:string ;
+                oboInOwl:shorthand "part_of"^^xsd:string ;
+                rdfs:label "part of"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002202
+obo:RO_0002202 rdf:type owl:ObjectProperty ,
+                        owl:TransitiveProperty ;
+               oboInOwl:hasDbXref "RO:0002202"^^xsd:string ;
+               oboInOwl:hasOBONamespace "xenopus_anatomy"^^xsd:string ;
+               oboInOwl:id "develops_from"^^xsd:string ;
+               oboInOwl:shorthand "develops_from"^^xsd:string ;
+               rdfs:label "develops from"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/xao#end_stage
+xao:end_stage rdf:type owl:ObjectProperty ;
+              obo:IAO_0000115 "Anatomical structure/expression stops being viable, obvious or of utility during this developmental stage."^^xsd:string ;
+              oboInOwl:hasOBONamespace "xenopus_anatomy"^^xsd:string ;
+              oboInOwl:id "end_stage"^^xsd:string ;
+              rdfs:label "ends during"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource xao:end_stage ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Anatomical structure/expression stops being viable, obvious or of utility during this developmental stage."^^xsd:string ;
+   oboInOwl:hasDbXref "XAO:curators"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/xao#preceded_by
+xao:preceded_by rdf:type owl:ObjectProperty ,
+                         owl:TransitiveProperty ;
+                oboInOwl:hasOBONamespace "xenopus_anatomy"^^xsd:string ;
+                oboInOwl:id "preceded_by"^^xsd:string ;
+                rdfs:label "preceded by"^^xsd:string .
+
+
+###  http://purl.obolibrary.org/obo/xao#start_stage
+xao:start_stage rdf:type owl:ObjectProperty ;
+                obo:IAO_0000115 "Anatomical structure/expression begins being viable, obvious or of utility during this developmental stage."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_anatomy"^^xsd:string ;
+                oboInOwl:id "start_stage"^^xsd:string ;
+                rdfs:label "starts during"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource xao:start_stage ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Anatomical structure/expression begins being viable, obvious or of utility during this developmental stage."^^xsd:string ;
+   oboInOwl:hasDbXref "XAO:curators"^^xsd:string
+ ] .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/XAO_0000437
+obo:XAO_0000437 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000095
+                                ] ;
+                obo:IAO_0000115 "Xenopus developmental stage that corresponds to the end of the animal's life."^^xsd:string ;
+                oboInOwl:hasDbXref "UBERON:0000071"^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:0000437"^^xsd:string ;
+                rdfs:label "death"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_0000437 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Xenopus developmental stage that corresponds to the end of the animal's life."^^xsd:string ;
+   oboInOwl:hasDbXref "XAO:EJS"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000000
+obo:XAO_1000000 rdf:type owl:Class ;
+                obo:IAO_0000115 "A temporal interval that defines Xenopus life from unfertilized egg to adult and death stages."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000000"^^xsd:string ;
+                rdfs:label "Xenopus developmental stage"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000000 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "A temporal interval that defines Xenopus life from unfertilized egg to adult and death stages."^^xsd:string ;
+   oboInOwl:hasDbXref "XAO:EJS"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000001
+obo:XAO_1000001 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000012
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 1, corresponding to an embryo of age 0 hr and having the following external morphological criteria: One cell stage, shortly after fertilization. Pigmentation darker ventrally than dorsally. Length: 1.4 - 1.5 mm."^^xsd:string ;
+                oboInOwl:hasDbXref "UBERON:0000106"^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:hasRelatedSynonym "zygote"^^xsd:string ;
+                oboInOwl:id "XAO:1000001"^^xsd:string ;
+                rdfs:label "NF stage 1"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000001 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 1, corresponding to an embryo of age 0 hr and having the following external morphological criteria: One cell stage, shortly after fertilization. Pigmentation darker ventrally than dorsally. Length: 1.4 - 1.5 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000002
+obo:XAO_1000002 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000007 ;
+                obo:IAO_0000115 "Tailbud stage that refers to the earlier events associated with this stage, comprising Nieuwkoop and Faber stages 22 to 28."^^xsd:string ;
+                oboInOwl:hasExactSynonym "early tailbud"^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000002"^^xsd:string ;
+                rdfs:label "early tailbud stage"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000002 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Tailbud stage that refers to the earlier events associated with this stage, comprising Nieuwkoop and Faber stages 22 to 28."^^xsd:string ;
+   oboInOwl:hasDbXref "Bgee:curator"^^xsd:string ,
+                      "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000003
+obo:XAO_1000003 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000012 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000004
+                                ] ;
+                obo:IAO_0000115 "Embryonic stage during which the solid morula acquires an internal cavity, comprising Nieuwkoop and Faber stages 7 to 9."^^xsd:string ;
+                oboInOwl:hasDbXref "UBERON:0000108"^^xsd:string ;
+                oboInOwl:hasExactSynonym "blastula"^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000003"^^xsd:string ;
+                rdfs:label "blastula stage"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000003 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Embryonic stage during which the solid morula acquires an internal cavity, comprising Nieuwkoop and Faber stages 7 to 9."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0471209627"^^xsd:string ,
+                      "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000004
+obo:XAO_1000004 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000012 ;
+                obo:IAO_0000115 "Embryonic stage during which the zygote undergoes synchronous divisions into 2, 4, 8, 16, etc. blastomeres, comprising Nieuwkoop and Faber stages 2 to 6.5."^^xsd:string ;
+                oboInOwl:hasDbXref "UBERON:0000107"^^xsd:string ;
+                oboInOwl:hasExactSynonym "cleavage"^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000004"^^xsd:string ;
+                rdfs:label "cleavage stage"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000004 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Embryonic stage during which the zygote undergoes synchronous divisions into 2, 4, 8, 16, etc. blastomeres, comprising Nieuwkoop and Faber stages 2 to 6.5."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0471209627"^^xsd:string ,
+                      "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000005
+obo:XAO_1000005 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000012 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000003
+                                ] ;
+                obo:IAO_0000115 "Embryonic stage during which gastrulation takes place, with a proportion of cells migrating below the surface of the embryo to form two inner layers (endoderm and mesoderm) and the cells which remain outside spreading over the whole surface of the embryo to form the ectoderm; comprising Nieuwkoop and Faber stages 10 to 12.5."^^xsd:string ;
+                oboInOwl:hasDbXref "UBERON:0000109"^^xsd:string ;
+                oboInOwl:hasExactSynonym "gastrula"^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000005"^^xsd:string ;
+                rdfs:label "gastrula stage"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000005 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Embryonic stage during which gastrulation takes place, with a proportion of cells migrating below the surface of the embryo to form two inner layers (endoderm and mesoderm) and the cells which remain outside spreading over the whole surface of the embryo to form the ectoderm; comprising Nieuwkoop and Faber stages 10 to 12.5."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0471209627"^^xsd:string ,
+                      "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000006
+obo:XAO_1000006 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000012 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000005
+                                ] ;
+                obo:IAO_0000115 "Embryonic stage during which the future nervous system appears as a thickened plate in dorsal ectoderm, the plate then rolling up at its sides to form a tube; comprising Nieuwkoop and Faber stages 13 to 21."^^xsd:string ;
+                oboInOwl:hasDbXref "UBERON:0000110"^^xsd:string ;
+                oboInOwl:hasExactSynonym "neurula"^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000006"^^xsd:string ;
+                rdfs:label "neurula stage"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000006 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Embryonic stage during which the future nervous system appears as a thickened plate in dorsal ectoderm, the plate then rolling up at its sides to form a tube; comprising Nieuwkoop and Faber stages 13 to 21."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0471209627"^^xsd:string ,
+                      "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000007
+obo:XAO_1000007 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000012 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000006
+                                ] ;
+                obo:IAO_0000115 "Embryonic stage during which neurulation is completed and tail formation begins, visible by an emerging tail primordium; comprising Nieuwkoop and Faber stages 22 to 44 (feeding), including the beginning of hatching (NF stage 35/36)."^^xsd:string ;
+                oboInOwl:hasDbXref "UBERON:0009741"^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000007"^^xsd:string ;
+                rdfs:label "tailbud stage"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000007 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Embryonic stage during which neurulation is completed and tail formation begins, visible by an emerging tail primordium; comprising Nieuwkoop and Faber stages 22 to 44 (feeding), including the beginning of hatching (NF stage 35/36)."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string ,
+                      "http://www.nature.com/nrg/journal/v5/n6/glossary/nrg1347.html"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000008
+obo:XAO_1000008 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000095 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000007
+                                ] ;
+                obo:IAO_0000115 "The post-embryonic Xenopus developmental stage from feeding to the end of metamorphosis, encompassing Weisz's first-form tadpole (equivalent to Nieuwkoop and Faber 45 to 49), second-form tadpole (NF 49 to 56) and third-form tadpole (NF 56 to 60-plus) stages."^^xsd:string ;
+                oboInOwl:hasDbXref "UBERON:0009849"^^xsd:string ;
+                oboInOwl:hasExactSynonym "tadpole"^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:hasRelatedSynonym "larva"^^xsd:string ,
+                                           "larval stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000008"^^xsd:string ;
+                rdfs:label "tadpole stage"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000008 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "The post-embryonic Xenopus developmental stage from feeding to the end of metamorphosis, encompassing Weisz's first-form tadpole (equivalent to Nieuwkoop and Faber 45 to 49), second-form tadpole (NF 49 to 56) and third-form tadpole (NF 56 to 60-plus) stages."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0471209627"^^xsd:string ,
+                      "ISSN:0003-276X"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000010
+obo:XAO_1000010 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000095 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000008
+                                ] ;
+                obo:IAO_0000115 "Xenopus developmental stage that corresponds to a sexually immature post-tadpole animal."^^xsd:string ;
+                oboInOwl:hasDbXref "UBERON:0000112"^^xsd:string ;
+                oboInOwl:hasExactSynonym "juvenile frog"^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000010"^^xsd:string ;
+                rdfs:label "juvenile frog stage"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000010 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Xenopus developmental stage that corresponds to a sexually immature post-tadpole animal."^^xsd:string ;
+   oboInOwl:hasDbXref "XAO:EJS"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000011
+obo:XAO_1000011 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000004
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000028
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 2, corresponding to an embryo of age 1 hr 30 min at 22-24 Celsius and having the following external morphological criteria: Advanced two cell stage. First cleavage groove has reached vegetal pole. Ventral side of blastomeres darker than dorsal side. Length: 1.4 - 1.5 mm."^^xsd:string ;
+                oboInOwl:hasDbXref "UBERON:0007232"^^xsd:string ;
+                oboInOwl:hasExactSynonym "2-cell stage"^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000011"^^xsd:string ;
+                rdfs:label "NF stage 2 (2-cell)"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000011 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 2, corresponding to an embryo of age 1 hr 30 min at 22-24 Celsius and having the following external morphological criteria: Advanced two cell stage. First cleavage groove has reached vegetal pole. Ventral side of blastomeres darker than dorsal side. Length: 1.4 - 1.5 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000012
+obo:XAO_1000012 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000082
+                                ] ;
+                obo:IAO_0000115 "Xenopus developmental stage that starts with fertilization and ends with the formed feeding larva."^^xsd:string ;
+                oboInOwl:hasDbXref "UBERON:0000068"^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000012"^^xsd:string ;
+                rdfs:label "embryonic stage"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000012 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Xenopus developmental stage that starts with fertilization and ends with the formed feeding larva."^^xsd:string ;
+   oboInOwl:hasDbXref "Bgee:curator"^^xsd:string ,
+                      "XAO:EJS"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000013
+obo:XAO_1000013 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000004
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000011
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 3, corresponding to an embryo of age 2 hr at 22-24 Celsius and having the following external morphological criteria: Advanced four-cell stage. Second cleavage groove has reached vegetal pole. In animal view dorsal blastomeres usually smaller than ventral ones; the latter darker than the former. Length: 1.4 - 1.5 mm."^^xsd:string ;
+                oboInOwl:hasDbXref "UBERON:0007233"^^xsd:string ;
+                oboInOwl:hasExactSynonym "4-cell stage"^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000013"^^xsd:string ;
+                rdfs:label "NF stage 3 (4-cell)"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000013 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 3, corresponding to an embryo of age 2 hr at 22-24 Celsius and having the following external morphological criteria: Advanced four-cell stage. Second cleavage groove has reached vegetal pole. In animal view dorsal blastomeres usually smaller than ventral ones; the latter darker than the former. Length: 1.4 - 1.5 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000014
+obo:XAO_1000014 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000004
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000013
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 4, corresponding to an embryo of age 2 hr 15 min at 22-24 Celsius and having the following external morphological criteria: Advanced eight cell stage. Dorsal micro- and macromeres usually smaller than ventral ones; dorsal micromeres less pigmented than ventral ones. Length: 1.4 - 1.5 mm."^^xsd:string ;
+                oboInOwl:hasDbXref "UBERON:0007236"^^xsd:string ;
+                oboInOwl:hasExactSynonym "8-cell stage"^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000014"^^xsd:string ;
+                rdfs:label "NF stage 4 (8-cell)"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000014 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 4, corresponding to an embryo of age 2 hr 15 min at 22-24 Celsius and having the following external morphological criteria: Advanced eight cell stage. Dorsal micro- and macromeres usually smaller than ventral ones; dorsal micromeres less pigmented than ventral ones. Length: 1.4 - 1.5 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000015
+obo:XAO_1000015 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000004
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000014
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 5, corresponding to an embryo of age 2 hr 45 min at 22-24 Celsius and having the following external morphological criteria: Advanced sixteen cell stage. Dorsal micromeres distinctly smaller and less pigmented than ventral ones. Macromeres entirely separated by cleavage grooves. Length: 1.4 - 1.5 mm."^^xsd:string ;
+                oboInOwl:hasExactSynonym "16-cell stage"^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000015"^^xsd:string ;
+                rdfs:label "NF stage 5 (16-cell)"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000015 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 5, corresponding to an embryo of age 2 hr 45 min at 22-24 Celsius and having the following external morphological criteria: Advanced sixteen cell stage. Dorsal micromeres distinctly smaller and less pigmented than ventral ones. Macromeres entirely separated by cleavage grooves. Length: 1.4 - 1.5 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000016
+obo:XAO_1000016 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000004
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000015
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 6, corresponding to an embryo of age 3 hr at 22-24 Celsius and having the following external morphological criteria: Advanced thirty-two cell stage. Distinction between dorsal and ventral micromeres as in preceding stage. Length: 1.4 - 1.5 mm."^^xsd:string ;
+                oboInOwl:hasExactSynonym "32-cell stage"^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000016"^^xsd:string ;
+                rdfs:label "NF stage 6 (32-cell)"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000016 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 6, corresponding to an embryo of age 3 hr at 22-24 Celsius and having the following external morphological criteria: Advanced thirty-two cell stage. Distinction between dorsal and ventral micromeres as in preceding stage. Length: 1.4 - 1.5 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000017
+obo:XAO_1000017 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000003
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000029
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 7 (64-cell stage), corresponding to an embryo of age 4 hr at 22-24 Celsius and having the following external morphological criteria: Large-cell blastula stage. In animal view about 10 micromeres along meridian. Length: 1.4 - 1.5 mm."^^xsd:string ;
+                oboInOwl:hasExactSynonym "64-cell stage"^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000017"^^xsd:string ;
+                rdfs:label "NF stage 7"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000017 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 7 (64-cell stage), corresponding to an embryo of age 4 hr at 22-24 Celsius and having the following external morphological criteria: Large-cell blastula stage. In animal view about 10 micromeres along meridian. Length: 1.4 - 1.5 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000018
+obo:XAO_1000018 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000003
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000017
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 8 (128-cell stage), corresponding to an embryo of age 5 hr at 22-24 Celsius and having the following external morphological criteria: Medium-cell blastula stage. Surface not yet entirely smooth. Border of animal pigment cap more diffuse at dorsal than at lateral and ventral sides. Gradual transition in cell size from animal to vegetative pole. Length: 1.4 - 1.5 mm."^^xsd:string ;
+                oboInOwl:hasExactSynonym "128-cell stage"^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000018"^^xsd:string ;
+                rdfs:label "NF stage 8"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000018 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 8 (128-cell stage), corresponding to an embryo of age 5 hr at 22-24 Celsius and having the following external morphological criteria: Medium-cell blastula stage. Surface not yet entirely smooth. Border of animal pigment cap more diffuse at dorsal than at lateral and ventral sides. Gradual transition in cell size from animal to vegetative pole. Length: 1.4 - 1.5 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000019
+obo:XAO_1000019 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000003
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000018
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 9, corresponding to an embryo of age 7 hr at 22-24 Celsius and having the following external morphological criteria: Fine-cell blastula stage. Animal cells smaller at dorsal than at ventral side. Border between marginal zone and vegetative field distinct, particularly dorsally, owing to difference in cell size. Length: 1.4 - 1.5 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000019"^^xsd:string ;
+                rdfs:label "NF stage 9"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000019 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 9, corresponding to an embryo of age 7 hr at 22-24 Celsius and having the following external morphological criteria: Fine-cell blastula stage. Animal cells smaller at dorsal than at ventral side. Border between marginal zone and vegetative field distinct, particularly dorsally, owing to difference in cell size. Length: 1.4 - 1.5 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000020
+obo:XAO_1000020 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000005
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000019
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 10, corresponding to an embryo of age 9 hr at 22-24 Celsius and having the following external morphological criteria: Initial gastrula stage. First indication of blastopore only by pigment concentration. No formation of groove. Length: 1.4 - 1.5 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000020"^^xsd:string ;
+                rdfs:label "NF stage 10"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000020 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 10, corresponding to an embryo of age 9 hr at 22-24 Celsius and having the following external morphological criteria: Initial gastrula stage. First indication of blastopore only by pigment concentration. No formation of groove. Length: 1.4 - 1.5 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000021
+obo:XAO_1000021 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000005
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000031
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 11, corresponding to an embryo of age 11 hr 45 min at 22-24 Celsius and having the following external morphological criteria: Horse-shoe-shaped blastopore stage. Blastopore groove surrounding about half of future yolk plug and indicated at its ventral side; future yolk plug often rounded rectangular, slightly elongated in dorso-ventral direction, diameter more than two-fifths of diameter of egg (plus or minus 50 degrees of circumference). Length: 1.4 - 1.5 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000021"^^xsd:string ;
+                rdfs:label "NF stage 11"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000021 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 11, corresponding to an embryo of age 11 hr 45 min at 22-24 Celsius and having the following external morphological criteria: Horse-shoe-shaped blastopore stage. Blastopore groove surrounding about half of future yolk plug and indicated at its ventral side; future yolk plug often rounded rectangular, slightly elongated in dorso-ventral direction, diameter more than two-fifths of diameter of egg (plus or minus 50 degrees of circumference). Length: 1.4 - 1.5 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000022
+obo:XAO_1000022 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000005
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000032
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 12, corresponding to an embryo of age 13 hr 15 min at 22-24 Celsius and having the following external morphological criteria: Medium yolk plug stage. Yolk plug circular; diameter somewhat less than one fourth of diameter of egg (plus or minus 25 degrees). More and less pigmented fields radiating from yolk plug. Length: 1.4 - 1.5 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000022"^^xsd:string ;
+                rdfs:label "NF stage 12"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000022 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 12, corresponding to an embryo of age 13 hr 15 min at 22-24 Celsius and having the following external morphological criteria: Medium yolk plug stage. Yolk plug circular; diameter somewhat less than one fourth of diameter of egg (plus or minus 25 degrees). More and less pigmented fields radiating from yolk plug. Length: 1.4 - 1.5 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000023
+obo:XAO_1000023 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000006
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000033
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 13, corresponding to an embryo of age 14 hr 45 min at 22-24 Celsius and having the following external morphological criteria: Slit-blastopore stage. Neural plate faintly delimited; slight elevation of its rostral part and slight flattening of its caudal part. Caudal part of median groove formed. Length: 1.5 - 1.6 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000023"^^xsd:string ;
+                rdfs:label "NF stage 13"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000023 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 13, corresponding to an embryo of age 14 hr 45 min at 22-24 Celsius and having the following external morphological criteria: Slit-blastopore stage. Neural plate faintly delimited; slight elevation of its rostral part and slight flattening of its caudal part. Caudal part of median groove formed. Length: 1.5 - 1.6 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000024
+obo:XAO_1000024 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000006
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000023
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 14, corresponding to an embryo of age 16 hr 15 min at 22-24 Celsius and having the following external morphological criteria: Neural plate stage. Cerebral part of neural plate bent downwards, with median elevation at rostral end of median groove. Initial elevation of neural folds, most pronounced in future nucal region. Blastopore always slit-shaped. Length: 1.5 - 1.6 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000024"^^xsd:string ;
+                rdfs:label "NF stage 14"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000024 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 14, corresponding to an embryo of age 16 hr 15 min at 22-24 Celsius and having the following external morphological criteria: Neural plate stage. Cerebral part of neural plate bent downwards, with median elevation at rostral end of median groove. Initial elevation of neural folds, most pronounced in future nucal region. Blastopore always slit-shaped. Length: 1.5 - 1.6 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000025
+obo:XAO_1000025 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000006
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000024
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 15, corresponding to an embryo of age 17 hr 30 min at 22-24 Celsius and having the following external morphological criteria: Early neural fold stage. Presumptive cement gland faintly circumscribed. Anterior part of neural plate roundish. Neural folds distinct, except medio-rostrally; initial formation of sharp inner ridges on neural folds in rhombencephalic region. Length: 1.5 - 1.6 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000025"^^xsd:string ;
+                rdfs:label "NF stage 15"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000025 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 15, corresponding to an embryo of age 17 hr 30 min at 22-24 Celsius and having the following external morphological criteria: Early neural fold stage. Presumptive cement gland faintly circumscribed. Anterior part of neural plate roundish. Neural folds distinct, except medio-rostrally; initial formation of sharp inner ridges on neural folds in rhombencephalic region. Length: 1.5 - 1.6 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000026
+obo:XAO_1000026 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000006
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000025
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 16, corresponding to an embryo of age 18 hr 15 min at 22-24 Celsius and having the following external morphological criteria: Mid neural fold stage. Anterior part of neural plate rectangular; darkly pigmented eye anlagen present; neural plate sharply constricted in the middle. Inner ridges on neural folds forming angle of about 90 degrees with neural plate in rhombencephalic region. Length: 1.5 - 1.6 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000026"^^xsd:string ;
+                rdfs:label "NF stage 16"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000026 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 16, corresponding to an embryo of age 18 hr 15 min at 22-24 Celsius and having the following external morphological criteria: Mid neural fold stage. Anterior part of neural plate rectangular; darkly pigmented eye anlagen present; neural plate sharply constricted in the middle. Inner ridges on neural folds forming angle of about 90 degrees with neural plate in rhombencephalic region. Length: 1.5 - 1.6 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000027
+obo:XAO_1000027 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000006
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000026
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 17, corresponding to an embryo of age 18 hr 45 min at 22-24 Celsius and having the following external morphological criteria: Late neural fold stage. Anterior part of neural plate oblong triangular, angles formed by eye anlagen. Neural folds approaching each other from blastopore up to anterior trunk region. Length: 1.5 - 1.6 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000027"^^xsd:string ;
+                rdfs:label "NF stage 17"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000027 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 17, corresponding to an embryo of age 18 hr 45 min at 22-24 Celsius and having the following external morphological criteria: Late neural fold stage. Anterior part of neural plate oblong triangular, angles formed by eye anlagen. Neural folds approaching each other from blastopore up to anterior trunk region. Length: 1.5 - 1.6 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000028
+obo:XAO_1000028 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000004
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000001
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 2-, corresponding to an embryo of age 1 hr 15 min at 22-24 Celsius and having the following external morphological criteria: Beginning of first cleavage. First cleavage groove has not yet reached vegetal pole. Length: 1.4 - 1.5 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000028"^^xsd:string ;
+                rdfs:label "NF stage 2-"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000028 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 2-, corresponding to an embryo of age 1 hr 15 min at 22-24 Celsius and having the following external morphological criteria: Beginning of first cleavage. First cleavage groove has not yet reached vegetal pole. Length: 1.4 - 1.5 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000029
+obo:XAO_1000029 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000004
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000016
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 6.5, corresponding to an embryo of age 3 hr 30 min at 22-24 Celsius and having the following external morphological criteria: Morula stage. About 48 blastomeres. In animal view about 6 micromeres along meridian. Length: 1.4 - 1.5 mm."^^xsd:string ;
+                oboInOwl:hasDbXref "UBERON:0000085"^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:hasRelatedSynonym "morula"^^xsd:string ;
+                oboInOwl:id "XAO:1000029"^^xsd:string ;
+                rdfs:label "NF stage 6.5"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000029 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 6.5, corresponding to an embryo of age 3 hr 30 min at 22-24 Celsius and having the following external morphological criteria: Morula stage. About 48 blastomeres. In animal view about 6 micromeres along meridian. Length: 1.4 - 1.5 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000029 ;
+   owl:annotatedProperty oboInOwl:hasRelatedSynonym ;
+   owl:annotatedTarget "morula"^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000030
+obo:XAO_1000030 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000005
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000020
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 10.25, corresponding to an embryo of age 10 hr at 22-24 Celsius and having the following external morphological criteria: Early gastrula stage. First formation of dorsal blastopore groove; the groove is still straight. Length: 1.4 - 1.5 mm."^^xsd:string ;
+                oboInOwl:hasExactSynonym "NF stage 10+"^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000030"^^xsd:string ;
+                rdfs:label "NF stage 10.25"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000030 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 10.25, corresponding to an embryo of age 10 hr at 22-24 Celsius and having the following external morphological criteria: Early gastrula stage. First formation of dorsal blastopore groove; the groove is still straight. Length: 1.4 - 1.5 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000031
+obo:XAO_1000031 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000005
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000030
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 10.5, corresponding to an embryo of age 11 hr at 22-24 Celsius and having the following external morphological criteria: Crescent-shaped blastopore stage. Blastopore groove angular. Vegetal field slightly decreased in size, ventral border of future yolk plug indicated by pigment contraction. Length: 1.4 - 1.5 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000031"^^xsd:string ;
+                rdfs:label "NF stage 10.5"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000031 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 10.5, corresponding to an embryo of age 11 hr at 22-24 Celsius and having the following external morphological criteria: Crescent-shaped blastopore stage. Blastopore groove angular. Vegetal field slightly decreased in size, ventral border of future yolk plug indicated by pigment contraction. Length: 1.4 - 1.5 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000032
+obo:XAO_1000032 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000005
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000021
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 11.5, corresponding to an embryo of age 12 hr 30 min at 22-24 Celsius and having the following external morphological criteria: Large yolk plug stage. Blastopore groove closed ventrally; yolk plug not yet quite circular. At ventral side concentrated superficial pigment still visible. Diameter of yolk plug about a third of diameter of egg (plus or minus 40 degrees). Length: 1.4 - 1.5 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000032"^^xsd:string ;
+                rdfs:label "NF stage 11.5"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000032 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 11.5, corresponding to an embryo of age 12 hr 30 min at 22-24 Celsius and having the following external morphological criteria: Large yolk plug stage. Blastopore groove closed ventrally; yolk plug not yet quite circular. At ventral side concentrated superficial pigment still visible. Diameter of yolk plug about a third of diameter of egg (plus or minus 40 degrees). Length: 1.4 - 1.5 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000033
+obo:XAO_1000033 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000005
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000022
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 12.5, corresponding to an embryo of age 14 hr 15 min at 22-24 Celsius and having the following external morphological criteria: Small yolk plug stage. Future position of neural plate and median groove indicated by darker pigment lines. Yolk plug usually ovoid, variable in size. Length: 1.4 - 1.5 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000033"^^xsd:string ;
+                rdfs:label "NF stage 12.5"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000033 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 12.5, corresponding to an embryo of age 14 hr 15 min at 22-24 Celsius and having the following external morphological criteria: Small yolk plug stage. Future position of neural plate and median groove indicated by darker pigment lines. Yolk plug usually ovoid, variable in size. Length: 1.4 - 1.5 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000034
+obo:XAO_1000034 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000006
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000027
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 18, corresponding to an embryo of age 19 hr 45 min at 22-24 Celsius and having the following external morphological criteria: Neural groove stage. Anterior part of neural plate narrow, more or less club-shaped, often narrower towards rostral end. Parallel neural folds in trunk region very close to each other, not yet touching. Length: 1.5 - 1.6 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000034"^^xsd:string ;
+                rdfs:label "NF stage 18"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000034 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 18, corresponding to an embryo of age 19 hr 45 min at 22-24 Celsius and having the following external morphological criteria: Neural groove stage. Anterior part of neural plate narrow, more or less club-shaped, often narrower towards rostral end. Parallel neural folds in trunk region very close to each other, not yet touching. Length: 1.5 - 1.6 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000035
+obo:XAO_1000035 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000006
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000034
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 19, corresponding to an embryo of age 20 hr 45 min at 22-24 Celsius and having the following external morphological criteria: Initial neural tube stage. Neural folds touching each other, except for inconstant openings at anterior and posterior end and behind nucal region. Considerable lateral extension of brain. Lateral outline of embryo still convex. Length: 1.5 - 1.6 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000035"^^xsd:string ;
+                rdfs:label "NF stage 19"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000035 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 19, corresponding to an embryo of age 20 hr 45 min at 22-24 Celsius and having the following external morphological criteria: Initial neural tube stage. Neural folds touching each other, except for inconstant openings at anterior and posterior end and behind nucal region. Considerable lateral extension of brain. Lateral outline of embryo still convex. Length: 1.5 - 1.6 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000036
+obo:XAO_1000036 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000006
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000035
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 20, corresponding to an embryo of age 21 hr 45 min at 22-24 Celsius and having the following external morphological criteria: Neural folds fused, suture still present. The two eye anlagen showing through dumb-bell-shaped, eyes hardly protruding. Beginning of stretching of embryos. Lateral outline flat. Length: 1.7 - 1.8 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000036"^^xsd:string ;
+                rdfs:label "NF stage 20"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000036 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 20, corresponding to an embryo of age 21 hr 45 min at 22-24 Celsius and having the following external morphological criteria: Neural folds fused, suture still present. The two eye anlagen showing through dumb-bell-shaped, eyes hardly protruding. Beginning of stretching of embryos. Lateral outline flat. Length: 1.7 - 1.8 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000037
+obo:XAO_1000037 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000006
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000036
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 21, corresponding to an embryo of age 22 hr 30 min at 22-24 Celsius and having the following external morphological criteria: Suture of neural tube completely closed. Delimitation of frontal field by pigment lines. Primary eye vesicles showing through in the form of two separate, obliquely placed oval spots; beginning of protrusion of eyes. Lateral outline of embryo just becoming concave, ventral outline flat. Length: 1.9 - 2.0 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000037"^^xsd:string ;
+                rdfs:label "NF stage 21"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000037 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 21, corresponding to an embryo of age 22 hr 30 min at 22-24 Celsius and having the following external morphological criteria: Suture of neural tube completely closed. Delimitation of frontal field by pigment lines. Primary eye vesicles showing through in the form of two separate, obliquely placed oval spots; beginning of protrusion of eyes. Lateral outline of embryo just becoming concave, ventral outline flat. Length: 1.9 - 2.0 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000038
+obo:XAO_1000038 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000002
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000037
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 22, corresponding to an embryo of age 24 hr at 22-24 Celsius and having the following external morphological criteria: Distinct protrusion of eyes. Initial groove between jaw- and gill-areas only at latero-dorsal side. Lateral and ventral outlines of embryo slightly concave. Anal opening displaced to ventral side. Vitelline membrane becoming wider. Length: 2.0 - 2.2 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000038"^^xsd:string ;
+                rdfs:label "NF stage 22"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000038 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 22, corresponding to an embryo of age 24 hr at 22-24 Celsius and having the following external morphological criteria: Distinct protrusion of eyes. Initial groove between jaw- and gill-areas only at latero-dorsal side. Lateral and ventral outlines of embryo slightly concave. Anal opening displaced to ventral side. Vitelline membrane becoming wider. Length: 2.0 - 2.2 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000039
+obo:XAO_1000039 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000002
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000038
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 23, corresponding to an embryo of age 1 day, 45 min at 22-24 Celsius and having the following external morphological criteria: Jaw- and gill-areas completely separated by groove. Ventral outline of embryo more concave. Length: 2.2 - 2.4 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000039"^^xsd:string ;
+                rdfs:label "NF stage 23"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000039 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 23, corresponding to an embryo of age 1 day, 45 min at 22-24 Celsius and having the following external morphological criteria: Jaw- and gill-areas completely separated by groove. Ventral outline of embryo more concave. Length: 2.2 - 2.4 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000040
+obo:XAO_1000040 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000002
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000039
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 24, corresponding to an embryo of age 1 day, 2 hr 15 min at 22-24 Celsius and having the following external morphological criteria: Eyes protruding less far laterally than gill-area. Gill-area more prominent than jaw-area, gill-area not yet grooved. Ventral outline of embryo nicked. Tail bud discernible. Initial motor reactions to external stimulation. Length: 2.5 - 2.7 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000040"^^xsd:string ;
+                rdfs:label "NF stage 24"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000040 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 24, corresponding to an embryo of age 1 day, 2 hr 15 min at 22-24 Celsius and having the following external morphological criteria: Eyes protruding less far laterally than gill-area. Gill-area more prominent than jaw-area, gill-area not yet grooved. Ventral outline of embryo nicked. Tail bud discernible. Initial motor reactions to external stimulation. Length: 2.5 - 2.7 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000041
+obo:XAO_1000041 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000002
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000040
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 25, corresponding to an embryo of age 1 day, 3 hr 30 min at 22-24 Celsius and having the following external morphological criteria: Eyes protruding equally far or further laterally than gill-area. Gill-area grooved. Invagination of otic vesicle indicated by pigment spot. Beginning of fin formation. Length: 2.8 - 3.0 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000041"^^xsd:string ;
+                rdfs:label "NF stage 25"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000041 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 25, corresponding to an embryo of age 1 day, 3 hr 30 min at 22-24 Celsius and having the following external morphological criteria: Eyes protruding equally far or further laterally than gill-area. Gill-area grooved. Invagination of otic vesicle indicated by pigment spot. Beginning of fin formation. Length: 2.8 - 3.0 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000042
+obo:XAO_1000042 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000002
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000041
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 26, corresponding to an embryo of age 1 day, 5 hr 30 min at 22-24 Celsius and having the following external morphological criteria: Otic vesicle protruding. Pronephros distinctly visible. Myotomes showing through for the first time. Fin somewhat broadened at dorso-caudal end of body. Beginning of spontaneous movements. Length: 3.0 - 3.3 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000042"^^xsd:string ;
+                rdfs:label "NF stage 26"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000042 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 26, corresponding to an embryo of age 1 day, 5 hr 30 min at 22-24 Celsius and having the following external morphological criteria: Otic vesicle protruding. Pronephros distinctly visible. Myotomes showing through for the first time. Fin somewhat broadened at dorso-caudal end of body. Beginning of spontaneous movements. Length: 3.0 - 3.3 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000043
+obo:XAO_1000043 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000002
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000042
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 27, corresponding to an embryo of age 1 day, 7 hr 15 min at 22-24 Celsius and having the following external morphological criteria: Lateral flattening of eyes. Fin transluscent, except for region behind anus. Tail bud formation accentuated in lateral outline. Length: 3.4 - 3.7 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000043"^^xsd:string ;
+                rdfs:label "NF stage 27"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000043 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 27, corresponding to an embryo of age 1 day, 7 hr 15 min at 22-24 Celsius and having the following external morphological criteria: Lateral flattening of eyes. Fin transluscent, except for region behind anus. Tail bud formation accentuated in lateral outline. Length: 3.4 - 3.7 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000044
+obo:XAO_1000044 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000002
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000043
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 28, corresponding to an embryo of age 1 day, 8 hr 30 min at 22-24 Celsius and having the following external morphological criteria: Fin extending up to anus. Fin broadened and distinctly divided into outer transparent and inner translucent band. Length: 3.8 - 4.0 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000044"^^xsd:string ;
+                rdfs:label "NF stage 28"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000044 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 28, corresponding to an embryo of age 1 day, 8 hr 30 min at 22-24 Celsius and having the following external morphological criteria: Fin extending up to anus. Fin broadened and distinctly divided into outer transparent and inner translucent band. Length: 3.8 - 4.0 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000045
+obo:XAO_1000045 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000080
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000044
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 29/30, corresponding to an embryo of age 1 day, 11 hr at 22-24 Celsius and having the following external morphological criteria: Gray eye cup showing through for the first time. Fin transparent up to the base over its whole length. Tail bud distinct. Length: 4.0 - 4.5 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000045"^^xsd:string ;
+                rdfs:label "NF stage 29 and 30"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000045 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 29/30, corresponding to an embryo of age 1 day, 11 hr at 22-24 Celsius and having the following external morphological criteria: Gray eye cup showing through for the first time. Fin transparent up to the base over its whole length. Tail bud distinct. Length: 4.0 - 4.5 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000046
+obo:XAO_1000046 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000080
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000045
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 31, corresponding to an embryo of age 1 day, 13 hr 30 min at 22-24 Celsius and having the following external morphological criteria: Tail bud equally long as broad. Length: 4.2 - 4.8 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000046"^^xsd:string ;
+                rdfs:label "NF stage 31"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000046 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 31, corresponding to an embryo of age 1 day, 13 hr 30 min at 22-24 Celsius and having the following external morphological criteria: Tail bud equally long as broad. Length: 4.2 - 4.8 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000047
+obo:XAO_1000047 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000080
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000046
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 32, corresponding to an embryo of age 1 day, 16 hr at 22-24 Celsius and having the following external morphological criteria: Eye cup horse-shoe-shaped, standing out distinctly. Length of tail bud about 1.5 times its breadth. Length: 4.5 - 5.1 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000047"^^xsd:string ;
+                rdfs:label "NF stage 32"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000047 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 32, corresponding to an embryo of age 1 day, 16 hr at 22-24 Celsius and having the following external morphological criteria: Eye cup horse-shoe-shaped, standing out distinctly. Length of tail bud about 1.5 times its breadth. Length: 4.5 - 5.1 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000048
+obo:XAO_1000048 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000080
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000047
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 33/34, corresponding to an embryo of age 1 day, 20 hr 30 min at 22-24 Celsius and having the following external morphological criteria: Stomodeal invagination a shallow vertical groove. Dorsal part of eye more pigmented than ventral part; distinct melanophores in dorsal part. Melanophores appearing dorsally on the head and laterally in a row extending from just below the pronephros backwards. Length of tail bud about twice its breadth. Beginning of heart beat. Length: 4.7 - 5.3 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000048"^^xsd:string ;
+                rdfs:label "NF stage 33 and 34"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000048 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 33/34, corresponding to an embryo of age 1 day, 20 hr 30 min at 22-24 Celsius and having the following external morphological criteria: Stomodeal invagination a shallow vertical groove. Dorsal part of eye more pigmented than ventral part; distinct melanophores in dorsal part. Melanophores appearing dorsally on the head and laterally in a row extending from just below the pronephros backwards. Length of tail bud about twice its breadth. Beginning of heart beat. Length: 4.7 - 5.3 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000049
+obo:XAO_1000049 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000080
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000048
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 35/36, corresponding to an embryo of age 2 days, 2 hr at 22-24 Celsius and having the following external morphological criteria: Stomodeal invagination roundish. Eye entirely black, choroid fissure nearly closed. Formation of two gill rudiments, anterior one nipple-shaped. Melanophores appearing on back. Posterior outline of proctodeum still curved. Length of tail bud about three times its breadth. Beginning of hatching. Length: 5.3 - 6.0 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000049"^^xsd:string ;
+                rdfs:label "NF stage 35 and 36"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000049 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 35/36, corresponding to an embryo of age 2 days, 2 hr at 22-24 Celsius and having the following external morphological criteria: Stomodeal invagination roundish. Eye entirely black, choroid fissure nearly closed. Formation of two gill rudiments, anterior one nipple-shaped. Melanophores appearing on back. Posterior outline of proctodeum still curved. Length of tail bud about three times its breadth. Beginning of hatching. Length: 5.3 - 6.0 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000050
+obo:XAO_1000050 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000080
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000049
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 37/38, corresponding to an embryo of age 2 days, 5 hr 30 min at 22-24 Celsius and having the following external morphological criteria: Stomodeal invagination much deeper, opening round. Both gill rudiments nipple-shaped, a branch of the anterior one indicated. Posterior outline of proctodeum straight, forming very obtuse angle with ventral border of tail myotomes. Melanophores spreading over tail. Length: 5.6 - 6.2 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000050"^^xsd:string ;
+                rdfs:label "NF stage 37 and 38"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000050 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 37/38, corresponding to an embryo of age 2 days, 5 hr 30 min at 22-24 Celsius and having the following external morphological criteria: Stomodeal invagination much deeper, opening round. Both gill rudiments nipple-shaped, a branch of the anterior one indicated. Posterior outline of proctodeum straight, forming very obtuse angle with ventral border of tail myotomes. Melanophores spreading over tail. Length: 5.6 - 6.2 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000051
+obo:XAO_1000051 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000080
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000050
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 39, corresponding to an embryo of age 2 days, 8 hr 30 min at 22-24 Celsius and having the following external morphological criteria: Melanophores appearing around nasal pits. Opening of stomodeal invagination transversely elongated. Melanophores on back arranged in a superficial and a deeper layer. Outlines of proctodeum and tail myotomes forming angle of about 135 degrees. Melanophores appearing along ventral edge of tail musculature. Length: 5.9 - 6.5 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000051"^^xsd:string ;
+                rdfs:label "NF stage 39"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000051 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 39, corresponding to an embryo of age 2 days, 8 hr 30 min at 22-24 Celsius and having the following external morphological criteria: Melanophores appearing around nasal pits. Opening of stomodeal invagination transversely elongated. Melanophores on back arranged in a superficial and a deeper layer. Outlines of proctodeum and tail myotomes forming angle of about 135 degrees. Melanophores appearing along ventral edge of tail musculature. Length: 5.9 - 6.5 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000052
+obo:XAO_1000052 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000080
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000051
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 40, corresponding to an embryo of age 2 days, 18 hr at 22-24 Celsius and having the following external morphological criteria: Mouth broken through. Length of gills about twice their breadth, posterior one sometimes also showing a branch. Outlines of proctodeum and tail myotomes forming angles of 90 degrees. Beginning of blood circulation in gills. Length: 6.3 - 6.8 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000052"^^xsd:string ;
+                rdfs:label "NF stage 40"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000052 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 40, corresponding to an embryo of age 2 days, 18 hr at 22-24 Celsius and having the following external morphological criteria: Mouth broken through. Length of gills about twice their breadth, posterior one sometimes also showing a branch. Outlines of proctodeum and tail myotomes forming angles of 90 degrees. Beginning of blood circulation in gills. Length: 6.3 - 6.8 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000053
+obo:XAO_1000053 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000080
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000052
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 41, corresponding to an embryo of age 3 days, 4 hr at 22-24 Celsius and having the following external morphological criteria: Gills broader and flatter, more laterally directed. Formation of a left-rostral and a right-caudal furrow in yolk mass; torsion of interjacent part about 45 degrees; formation of conical proctodeum, forming angle of about 60 degrees with tail myotomes. Formation of fin rostral to proctodeum; ventral outline of yolk mass and proctodeum a smooth concave line. Length: 6.7 - 7.5 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000053"^^xsd:string ;
+                rdfs:label "NF stage 41"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000053 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 41, corresponding to an embryo of age 3 days, 4 hr at 22-24 Celsius and having the following external morphological criteria: Gills broader and flatter, more laterally directed. Formation of a left-rostral and a right-caudal furrow in yolk mass; torsion of interjacent part about 45 degrees; formation of conical proctodeum, forming angle of about 60 degrees with tail myotomes. Formation of fin rostral to proctodeum; ventral outline of yolk mass and proctodeum a smooth concave line. Length: 6.7 - 7.5 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000054
+obo:XAO_1000054 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000080
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000053
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 42, corresponding to an embryo of age 3 days, 8 hr at 22-24 Celsius and having the following external morphological criteria: Beginning of formation of opercular folds. Torsion of intestine about 90 degrees; proctodeum connected with yolk mass by short horizontal intestinal tube. Length: 7.0 - 7.7 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000054"^^xsd:string ;
+                rdfs:label "NF stage 42"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000054 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 42, corresponding to an embryo of age 3 days, 8 hr at 22-24 Celsius and having the following external morphological criteria: Beginning of formation of opercular folds. Torsion of intestine about 90 degrees; proctodeum connected with yolk mass by short horizontal intestinal tube. Length: 7.0 - 7.7 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000055
+obo:XAO_1000055 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000080
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000054
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 43, corresponding to an embryo of age 3 days, 15 hr at 22-24 Celsius and having the following external morphological criteria: Lateral line system becoming visible externally. Cement gland losing its pigment. Torsion of intestine about 180 degrees; proctodeum narrower, arched or S-shaped. Length: 7.5 - 8.3 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000055"^^xsd:string ;
+                rdfs:label "NF stage 43"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000055 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 43, corresponding to an embryo of age 3 days, 15 hr at 22-24 Celsius and having the following external morphological criteria: Lateral line system becoming visible externally. Cement gland losing its pigment. Torsion of intestine about 180 degrees; proctodeum narrower, arched or S-shaped. Length: 7.5 - 8.3 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000056
+obo:XAO_1000056 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000080
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000055
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 44, corresponding to an embryo of age 3 days, 20 hr at 22-24 Celsius and having the following external morphological criteria: Appearance of tentacle rudiments. Opercular folds protruding further. Coiling part of intestine showing S-shaped loop; torsion about 360 degrees. Blood-circulation in gills usually ceased (gills smaller). Length: 7.8 - 8.5 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000056"^^xsd:string ;
+                rdfs:label "NF stage 44"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000056 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 44, corresponding to an embryo of age 3 days, 20 hr at 22-24 Celsius and having the following external morphological criteria: Appearance of tentacle rudiments. Opercular folds protruding further. Coiling part of intestine showing S-shaped loop; torsion about 360 degrees. Blood-circulation in gills usually ceased (gills smaller). Length: 7.8 - 8.5 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000057
+obo:XAO_1000057 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000089
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000056
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 45, corresponding to a tadpole of age 4 days, 2 hr at 22-24 Celsius and having the following external morphological criteria: Operculum partly covering gills, edge still straight. Intestine spiralized in ventral aspects, showing 1.5 revolutions. Beginning of feeding. Length: 8 - 10 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000057"^^xsd:string ;
+                rdfs:label "NF stage 45"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000057 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 45, corresponding to a tadpole of age 4 days, 2 hr at 22-24 Celsius and having the following external morphological criteria: Operculum partly covering gills, edge still straight. Intestine spiralized in ventral aspects, showing 1.5 revolutions. Beginning of feeding. Length: 8 - 10 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000058
+obo:XAO_1000058 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000089
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000057
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 46, corresponding to a tadpole of age 4 days, 10 hr at 22-24 Celsius and having the following external morphological criteria: Edge of operculum becoming convex. Xantophores appearing on eye and abdomen. Intestine showing 2 to 2.5 revolutions. Hindlimb bud visible for the first time. Length: 9 - 12 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000058"^^xsd:string ;
+                rdfs:label "NF stage 46"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000058 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 46, corresponding to a tadpole of age 4 days, 10 hr at 22-24 Celsius and having the following external morphological criteria: Edge of operculum becoming convex. Xantophores appearing on eye and abdomen. Intestine showing 2 to 2.5 revolutions. Hindlimb bud visible for the first time. Length: 9 - 12 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000059
+obo:XAO_1000059 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000089
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000058
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 47, corresponding to a tadpole of age 5 days, 12 hr at 22-24 Celsius and having the following external morphological criteria: Tentacles larger. Edge of operculum forming quarter of a circle. Xantophores forming opaque layer on abdomen. Intestine showing 2.5 to 3.5 revolutions. Hindlimb bud more distinct. Length: 12 - 15 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000059"^^xsd:string ;
+                rdfs:label "NF stage 47"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000059 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 47, corresponding to a tadpole of age 5 days, 12 hr at 22-24 Celsius and having the following external morphological criteria: Tentacles larger. Edge of operculum forming quarter of a circle. Xantophores forming opaque layer on abdomen. Intestine showing 2.5 to 3.5 revolutions. Hindlimb bud more distinct. Length: 12 - 15 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000060
+obo:XAO_1000060 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000089
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000059
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 48, corresponding to a tadpole of age 7.5 days at 22-24 Celsius and having the following external morphological criteria: Beginning of pigmentation around n. acusticus. Forelimb bud visible for the first time. Shining gold-coloured abdomen. Hindlimb bud semicircular in lateral aspect. Length: 14 - 17 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000060"^^xsd:string ;
+                rdfs:label "NF stage 48"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000060 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 48, corresponding to a tadpole of age 7.5 days at 22-24 Celsius and having the following external morphological criteria: Beginning of pigmentation around n. acusticus. Forelimb bud visible for the first time. Shining gold-coloured abdomen. Hindlimb bud semicircular in lateral aspect. Length: 14 - 17 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000061
+obo:XAO_1000061 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000089
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000060
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 49, corresponding to a tadpole of age about 12 days at 22-24 Celsius and having the following external morphological criteria: Melanophores usually appearing around thymus gland and nerves and blood vessels of head; xantophores appearing on pericard. Forelimb bud distinct. Hindlimb bud somewhat longer, distal outline still circular, no constrictions at base. Melanophores appearing on dorsal and ventral fin. Length: 17 - 23 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000061"^^xsd:string ;
+                rdfs:label "NF stage 49"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000061 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 49, corresponding to a tadpole of age about 12 days at 22-24 Celsius and having the following external morphological criteria: Melanophores usually appearing around thymus gland and nerves and blood vessels of head; xantophores appearing on pericard. Forelimb bud distinct. Hindlimb bud somewhat longer, distal outline still circular, no constrictions at base. Melanophores appearing on dorsal and ventral fin. Length: 17 - 23 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000062
+obo:XAO_1000062 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000089
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000061
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 50, corresponding to a tadpole of age about 15 days at 22-24 Celsius and having the following external morphological criteria: Forelimb bud somewhat oval-shaped in dorsal aspect. Hindlimb bud longer than broad, constricted at base, distal outline somewhat conical. Length: 20 - 27 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000062"^^xsd:string ;
+                rdfs:label "NF stage 50"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000062 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 50, corresponding to a tadpole of age about 15 days at 22-24 Celsius and having the following external morphological criteria: Forelimb bud somewhat oval-shaped in dorsal aspect. Hindlimb bud longer than broad, constricted at base, distal outline somewhat conical. Length: 20 - 27 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000063
+obo:XAO_1000063 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000089
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000062
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 51, corresponding to a tadpole of age about 17 days at 22-24 Celsius and having the following external morphological criteria: Tentacles much longer. Forelimb bud oval-shaped in lateral aspect. Hindlimb bud conical in shape, its length about 1.5 times its breadth; melanophores appearing on it. Length: 28 - 36 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000063"^^xsd:string ;
+                rdfs:label "NF stage 51"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000063 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 51, corresponding to a tadpole of age about 17 days at 22-24 Celsius and having the following external morphological criteria: Tentacles much longer. Forelimb bud oval-shaped in lateral aspect. Hindlimb bud conical in shape, its length about 1.5 times its breadth; melanophores appearing on it. Length: 28 - 36 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000064
+obo:XAO_1000064 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000089
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000063
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 52, corresponding to a tadpole of age about 21 days at 22-24 Celsius and having the following external morphological criteria: Forelimb bud irregularly conical. Hindlimb bud showing first indication of ankle constriction and first sign of flattening of foot. Length: 42 - 56 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000064"^^xsd:string ;
+                rdfs:label "NF stage 52"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000064 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 52, corresponding to a tadpole of age about 21 days at 22-24 Celsius and having the following external morphological criteria: Forelimb bud irregularly conical. Hindlimb bud showing first indication of ankle constriction and first sign of flattening of foot. Length: 42 - 56 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000065
+obo:XAO_1000065 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000089
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000064
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 53, corresponding to a tadpole of age about 24 days at 22-24 Celsius and having the following external morphological criteria: Fore- and hindlimbs in paddle stage. Hindlimb whithout foot somewhat longer than broad; 4th and 5th toe indicated. Length: 50 - 60 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000065"^^xsd:string ;
+                rdfs:label "NF stage 53"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000065 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 53, corresponding to a tadpole of age about 24 days at 22-24 Celsius and having the following external morphological criteria: Fore- and hindlimbs in paddle stage. Hindlimb whithout foot somewhat longer than broad; 4th and 5th toe indicated. Length: 50 - 60 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000066
+obo:XAO_1000066 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000089
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000065
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 54, corresponding to a tadpole of age about 26 days at 22-24 Celsius and having the following external morphological criteria: All four fingers indicated; edge of hand slightly scalloped between fingers; melanophores appearing on forelimb. Length of hindlimb without foot nearly twice its breadth; all five toes indicated, the second only very slightly. Length: 58 - 65 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000066"^^xsd:string ;
+                rdfs:label "NF stage 54"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000066 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 54, corresponding to a tadpole of age about 26 days at 22-24 Celsius and having the following external morphological criteria: All four fingers indicated; edge of hand slightly scalloped between fingers; melanophores appearing on forelimb. Length of hindlimb without foot nearly twice its breadth; all five toes indicated, the second only very slightly. Length: 58 - 65 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000067
+obo:XAO_1000067 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000090
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000066
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 55, corresponding to a tadpole of age about 32 days at 22-24 Celsius and having the following external morphological criteria: Hand pronated about 90 degrees; free parts of fingers about equally long as broad. Length of hindlimb without foot about 3 times its breadth; length of cartilages of 4th and 5th toe about 4 times their breadth. Length: 70 - 80 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000067"^^xsd:string ;
+                rdfs:label "NF stage 55"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000067 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 55, corresponding to a tadpole of age about 32 days at 22-24 Celsius and having the following external morphological criteria: Hand pronated about 90 degrees; free parts of fingers about equally long as broad. Length of hindlimb without foot about 3 times its breadth; length of cartilages of 4th and 5th toe about 4 times their breadth. Length: 70 - 80 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000068
+obo:XAO_1000068 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000090
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000067
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 56, corresponding to a tadpole of age about 38 days at 22-24 Celsius and having the following external morphological criteria: Elbow and wrist clearly indicated; length of free parts of fingers 3 to 4 times their breadth. Length of cartilages of 4th and 5th toe about 6 times their breadth. Length: 70 - 100 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000068"^^xsd:string ;
+                rdfs:label "NF stage 56"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000068 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 56, corresponding to a tadpole of age about 38 days at 22-24 Celsius and having the following external morphological criteria: Elbow and wrist clearly indicated; length of free parts of fingers 3 to 4 times their breadth. Length of cartilages of 4th and 5th toe about 6 times their breadth. Length: 70 - 100 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000069
+obo:XAO_1000069 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000090
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000068
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 57, corresponding to a tadpole of age about 41 days at 22-24 Celsius and having the following external morphological criteria: Pigment-free spot appearing above \"Stirnorgan\". Angle of elbow more than 90 degrees; fingers stretched out in forelimb atrium, their length about 7 times their breadth. Length: 75 - 105 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000069"^^xsd:string ;
+                rdfs:label "NF stage 57"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000069 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 57, corresponding to a tadpole of age about 41 days at 22-24 Celsius and having the following external morphological criteria: Pigment-free spot appearing above \"Stirnorgan\". Angle of elbow more than 90 degrees; fingers stretched out in forelimb atrium, their length about 7 times their breadth. Length: 75 - 105 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000070
+obo:XAO_1000070 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000091
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000069
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 58, corresponding to a tadpole of age about 44 days at 22-24 Celsius and having the following external morphological criteria: Forelimbs broken through. Guanophores appearing on abdomen and thighs (adult skin areas). All three claws present on hindlimbs. Length: 80 - 110 mm."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000070"^^xsd:string ;
+                rdfs:label "NF stage 58"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000070 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 58, corresponding to a tadpole of age about 44 days at 22-24 Celsius and having the following external morphological criteria: Forelimbs broken through. Guanophores appearing on abdomen and thighs (adult skin areas). All three claws present on hindlimbs. Length: 80 - 110 mm."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000071
+obo:XAO_1000071 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000091
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000070
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 59, corresponding to a tadpole of age about 45 days at 22-24 Celsius and having the following external morphological criteria: Tentacles beginning to shrivel up. Stretched forelimb reaching down to base of hindlimb. Guanophores appearing near base of forelimb (adult skin area); anterior border of adult skin area on abdomen not yet sharp; appearance of irregular dark spots on back."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000071"^^xsd:string ;
+                rdfs:label "NF stage 59"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000071 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 59, corresponding to a tadpole of age about 45 days at 22-24 Celsius and having the following external morphological criteria: Tentacles beginning to shrivel up. Stretched forelimb reaching down to base of hindlimb. Guanophores appearing near base of forelimb (adult skin area); anterior border of adult skin area on abdomen not yet sharp; appearance of irregular dark spots on back."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000072
+obo:XAO_1000072 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000091
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000071
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 60, corresponding to a tadpole of age about 46 days at 22-24 Celsius and having the following external morphological criteria: N. olfactorius still longer than bulbus olfactorius. Guanophores appearing on lower jaw (adult skin area). Openings of gill chambers still wide. Distal half of fingers of stretched forelimb extending beyond base of hindlimb; forelimb still situated behind level of heart. Adult skin area of base of forelimb covered with guanophores; anterior border of adult skin area on abdomen sharper, reaching up to heart."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000072"^^xsd:string ;
+                rdfs:label "NF stage 60"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000072 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 60, corresponding to a tadpole of age about 46 days at 22-24 Celsius and having the following external morphological criteria: N. olfactorius still longer than bulbus olfactorius. Guanophores appearing on lower jaw (adult skin area). Openings of gill chambers still wide. Distal half of fingers of stretched forelimb extending beyond base of hindlimb; forelimb still situated behind level of heart. Adult skin area of base of forelimb covered with guanophores; anterior border of adult skin area on abdomen sharper, reaching up to heart."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000073
+obo:XAO_1000073 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000091
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000072
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 61, corresponding to a tadpole of age about 48 days at 22-24 Celsius and having the following external morphological criteria: Head narrower. Tentacles considerably shortened, mostly curved backwards. Length of n. olfactorius equal to diameter of bulbus olfactorius. 4th arterial arch seen just in front of adult skin area of forelimb. Openings of gill chambers considerably narrowed. Forelimb at level of posterior half of heart. Adult skin area on abdomen covering posterior half of heart. Fins considerably reduced."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000073"^^xsd:string ;
+                rdfs:label "NF stage 61"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000073 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 61, corresponding to a tadpole of age about 48 days at 22-24 Celsius and having the following external morphological criteria: Head narrower. Tentacles considerably shortened, mostly curved backwards. Length of n. olfactorius equal to diameter of bulbus olfactorius. 4th arterial arch seen just in front of adult skin area of forelimb. Openings of gill chambers considerably narrowed. Forelimb at level of posterior half of heart. Adult skin area on abdomen covering posterior half of heart. Fins considerably reduced."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000074
+obo:XAO_1000074 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000091
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000073
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 62, corresponding to a tadpole of age about 49 days at 22-24 Celsius and having the following external morphological criteria: Head still somewhat broader than cranial part of trunk. Tentacles short, straight. N. olfactorius shorter than diameter of bulbus olfactorius. Corner of mouth still in front of eye. Thymus gland somewhat protruding. 3rd arterial arch (\"larval aorta\") seen at distance of its own diameter in front of adult skin area of forelimb. Opening of operculum reduced to curved slit. Forelimb at level of middle of heart. Anterior border of adult skin area on abdomen entirely sharp, mostly nicked medially. Ventral fin disappeared from abdomen."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000074"^^xsd:string ;
+                rdfs:label "NF stage 62"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000074 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 62, corresponding to a tadpole of age about 49 days at 22-24 Celsius and having the following external morphological criteria: Head still somewhat broader than cranial part of trunk. Tentacles short, straight. N. olfactorius shorter than diameter of bulbus olfactorius. Corner of mouth still in front of eye. Thymus gland somewhat protruding. 3rd arterial arch (\"larval aorta\") seen at distance of its own diameter in front of adult skin area of forelimb. Opening of operculum reduced to curved slit. Forelimb at level of middle of heart. Anterior border of adult skin area on abdomen entirely sharp, mostly nicked medially. Ventral fin disappeared from abdomen."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000075
+obo:XAO_1000075 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000091
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000074
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 63, corresponding to a tadpole of age about 51 days at 22-24 Celsius and having the following external morphological criteria: Head narrower than trunk. Tentacles mostly disappeared. Corner of mouth at level of caudal border of eye. \"Larval aorta\" and thymus gland no longer externally visible. Operculum closed. Adult skin areas on abdomen and lower jaw separated by narrow band of larval skin. Forelimb at level of anterior half of heart. Fin mostly perforated near anus. Tail still slightly longer than body."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000075"^^xsd:string ;
+                rdfs:label "NF stage 63"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000075 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 63, corresponding to a tadpole of age about 51 days at 22-24 Celsius and having the following external morphological criteria: Head narrower than trunk. Tentacles mostly disappeared. Corner of mouth at level of caudal border of eye. \"Larval aorta\" and thymus gland no longer externally visible. Operculum closed. Adult skin areas on abdomen and lower jaw separated by narrow band of larval skin. Forelimb at level of anterior half of heart. Fin mostly perforated near anus. Tail still slightly longer than body."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000076
+obo:XAO_1000076 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000091
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000075
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 64, corresponding to a tadpole of age about 53 days at 22-24 Celsius and having the following external morphological criteria: Corner of mouth well behind eye. Various adult skin areas joined almost everywhere, borderlines still clearly visible. Length of tail (from anus) is a third of body length."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000076"^^xsd:string ;
+                rdfs:label "NF stage 64"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000076 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 64, corresponding to a tadpole of age about 53 days at 22-24 Celsius and having the following external morphological criteria: Corner of mouth well behind eye. Various adult skin areas joined almost everywhere, borderlines still clearly visible. Length of tail (from anus) is a third of body length."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000077
+obo:XAO_1000077 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000091
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000076
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 65, corresponding to a tadpole of age about 54 days at 22-24 Celsius and having the following external morphological criteria: Borderlines between adult skin areas partly disappeared. Tail oblong triangular in dorsal aspect, length abouth one tenth of body length."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000077"^^xsd:string ;
+                rdfs:label "NF stage 65"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000077 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 65, corresponding to a tadpole of age about 54 days at 22-24 Celsius and having the following external morphological criteria: Borderlines between adult skin areas partly disappeared. Tail oblong triangular in dorsal aspect, length abouth one tenth of body length."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000078
+obo:XAO_1000078 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000094 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:XAO_1000091
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000077
+                                ] ;
+                obo:IAO_0000115 "Nieuwkoop and Faber stage 66, corresponding to a tadpole of age about 58 days at 22-24 Celsius and having the following external morphological criteria: Border lines between adult skin areas disappeared. Tail only a very small triangle, no longer visible from ventral side."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000078"^^xsd:string ;
+                rdfs:label "NF stage 66"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000078 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Nieuwkoop and Faber stage 66, corresponding to a tadpole of age about 58 days at 22-24 Celsius and having the following external morphological criteria: Border lines between adult skin areas disappeared. Tail only a very small triangle, no longer visible from ventral side."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000079
+obo:XAO_1000079 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000008 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000089
+                                ] ;
+                obo:IAO_0000115 "Tadpole stage during which toe differentiation and rapid hindlimb growth continue, followed by tail resorption; comprising Nieuwkoop and Faber stages 54 to 66."^^xsd:string ;
+                oboInOwl:hasExactSynonym "metamorphosing tadpole"^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000079"^^xsd:string ;
+                rdfs:label "metamorphosing tadpole stage"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000079 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Tadpole stage during which toe differentiation and rapid hindlimb growth continue, followed by tail resorption; comprising Nieuwkoop and Faber stages 54 to 66."^^xsd:string ;
+   oboInOwl:hasDbXref "Bgee:curator"^^xsd:string ,
+                      "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000080
+obo:XAO_1000080 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000007 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000002
+                                ] ;
+                obo:IAO_0000115 "Tailbud stage that refers to the later events associated with this stage, comprising Nieuwkoop and Faber stages 29/30 to 44."^^xsd:string ;
+                oboInOwl:hasExactSynonym "late tailbud"^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000080"^^xsd:string ;
+                rdfs:label "late tailbud stage"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000080 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Tailbud stage that refers to the later events associated with this stage, comprising Nieuwkoop and Faber stages 29/30 to 44."^^xsd:string ;
+   oboInOwl:hasDbXref "Bgee:curator"^^xsd:string ,
+                      "ISBN:0815318960"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000081
+obo:XAO_1000081 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000000 ;
+                obo:IAO_0000115 "Unspecified Xenopus developmental stage."^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000081"^^xsd:string ;
+                rdfs:label "unspecified stage"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000081 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Unspecified Xenopus developmental stage."^^xsd:string ;
+   oboInOwl:hasDbXref "XAO:EJS"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000082
+obo:XAO_1000082 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000000 ;
+                obo:IAO_0000115 "Any of the stages of the developing or mature Xenopus female gamete."^^xsd:string ;
+                oboInOwl:hasExactSynonym "unfertilized egg"^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000082"^^xsd:string ;
+                rdfs:label "unfertilized egg stage"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000082 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Any of the stages of the developing or mature Xenopus female gamete."^^xsd:string ;
+   oboInOwl:hasDbXref "XAO:EJS"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000083
+obo:XAO_1000083 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000082 ;
+                obo:IAO_0000115 "The pre-vitellogenic stage of the developing female gamete."^^xsd:string ;
+                oboInOwl:created_by "lab"^^xsd:string ;
+                oboInOwl:creation_date "2011-09-09T02:23:46Z"^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000083"^^xsd:string ;
+                rdfs:label "oocyte stage I"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000083 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "The pre-vitellogenic stage of the developing female gamete."^^xsd:string ;
+   oboInOwl:hasDbXref "XAO:EJS"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000084
+obo:XAO_1000084 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000082 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000083
+                                ] ;
+                obo:IAO_0000115 "The early vitellogenic stage of the developing female gamete."^^xsd:string ;
+                oboInOwl:created_by "lab"^^xsd:string ;
+                oboInOwl:creation_date "2011-09-09T02:24:37Z"^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000084"^^xsd:string ;
+                rdfs:label "oocyte stage II"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000084 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "The early vitellogenic stage of the developing female gamete."^^xsd:string ;
+   oboInOwl:hasDbXref "XAO:EJS"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000085
+obo:XAO_1000085 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000082 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000084
+                                ] ;
+                obo:IAO_0000115 "The mid-vitellogenic stage of the developing female gamete."^^xsd:string ;
+                oboInOwl:created_by "lab"^^xsd:string ;
+                oboInOwl:creation_date "2011-09-09T02:24:56Z"^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000085"^^xsd:string ;
+                rdfs:label "oocyte stage III"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000085 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "The mid-vitellogenic stage of the developing female gamete."^^xsd:string ;
+   oboInOwl:hasDbXref "XAO:EJS"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000086
+obo:XAO_1000086 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000082 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000085
+                                ] ;
+                obo:IAO_0000115 "The stage of the developing female gamete that corresponds to the establishment of polarization along the animal-vegetal axis of the gamete."^^xsd:string ;
+                oboInOwl:created_by "lab"^^xsd:string ;
+                oboInOwl:creation_date "2011-09-09T02:25:13Z"^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000086"^^xsd:string ;
+                rdfs:label "oocyte stage IV"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000086 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "The stage of the developing female gamete that corresponds to the establishment of polarization along the animal-vegetal axis of the gamete."^^xsd:string ;
+   oboInOwl:hasDbXref "XAO:EJS"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000087
+obo:XAO_1000087 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000082 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000086
+                                ] ;
+                obo:IAO_0000115 "The late-vitellogenic stage of the developing female gamete."^^xsd:string ;
+                oboInOwl:created_by "lab"^^xsd:string ;
+                oboInOwl:creation_date "2011-09-09T02:25:43Z"^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000087"^^xsd:string ;
+                rdfs:label "oocyte stage V"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000087 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "The late-vitellogenic stage of the developing female gamete."^^xsd:string ;
+   oboInOwl:hasDbXref "XAO:EJS"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000088
+obo:XAO_1000088 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000082 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000087
+                                ] ;
+                obo:IAO_0000115 "The developmental stage of the female gamete at which the gamete is fully grown."^^xsd:string ;
+                oboInOwl:created_by "lab"^^xsd:string ;
+                oboInOwl:creation_date "2011-09-09T02:26:43Z"^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000088"^^xsd:string ;
+                rdfs:label "oocyte stage VI"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000088 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "The developmental stage of the female gamete at which the gamete is fully grown."^^xsd:string ;
+   oboInOwl:hasDbXref "XAO:EJS"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000089
+obo:XAO_1000089 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000008 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000080
+                                ] ;
+                obo:IAO_0000115 "Tadpole stage during which limb bud growth occurs, comprising Nieuwkoop and Faber stages 45 to 54."^^xsd:string ;
+                oboInOwl:hasExactSynonym "premetamorphosis"^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000089"^^xsd:string ;
+                rdfs:label "premetamorphosis stage"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000089 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Tadpole stage during which limb bud growth occurs, comprising Nieuwkoop and Faber stages 45 to 54."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0124554032"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000090
+obo:XAO_1000090 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000079 ;
+                obo:IAO_0000115 "Metamorphosing tadpole stage during which toe differentiation and rapid hindlimb growth continue, comprising Nieuwkoop and Faber stages 55 to 57."^^xsd:string ;
+                oboInOwl:hasExactSynonym "prometamorphosis"^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000090"^^xsd:string ;
+                rdfs:label "prometamorphosis stage"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000090 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Metamorphosing tadpole stage during which toe differentiation and rapid hindlimb growth continue, comprising Nieuwkoop and Faber stages 55 to 57."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0124554032"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000091
+obo:XAO_1000091 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000079 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000090
+                                ] ;
+                obo:IAO_0000115 "Metamorphosing tadpole stage during which tail resorption occurs, comprising Nieuwkoop and Faber stages 58 to 66."^^xsd:string ;
+                oboInOwl:hasExactSynonym "climax"^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000091"^^xsd:string ;
+                rdfs:label "climax stage"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000091 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Metamorphosing tadpole stage during which tail resorption occurs, comprising Nieuwkoop and Faber stages 58 to 66."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0124554032"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000092
+obo:XAO_1000092 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000082 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000088
+                                ] ;
+                obo:IAO_0000115 "The developmental stage of the female gamete at which the gamete has reached maturity."^^xsd:string ;
+                oboInOwl:created_by "lab"^^xsd:string ;
+                oboInOwl:creation_date "2011-09-09T02:32:08Z"^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:hasRelatedSynonym "mature egg"^^xsd:string ;
+                oboInOwl:id "XAO:1000092"^^xsd:string ;
+                rdfs:label "mature egg stage"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000092 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "The developmental stage of the female gamete at which the gamete has reached maturity."^^xsd:string ;
+   oboInOwl:hasDbXref "XAO:EJS"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000093
+obo:XAO_1000093 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000095 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000010
+                                ] ;
+                obo:IAO_0000115 "Xenopus developmental stage that corresponds to a fully formed, mature animal."^^xsd:string ;
+                oboInOwl:created_by "lab"^^xsd:string ;
+                oboInOwl:creation_date "2011-09-19T01:53:23Z"^^xsd:string ;
+                oboInOwl:hasExactSynonym "adult frog"^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000093"^^xsd:string ;
+                rdfs:label "adult frog stage"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000093 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Xenopus developmental stage that corresponds to a fully formed, mature animal."^^xsd:string ;
+   oboInOwl:hasDbXref "XAO:EJS"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000094
+obo:XAO_1000094 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000000 ;
+                obo:IAO_0000115 "Xenopus developmental stage that is one of the 66 standard chronological embryonic and tadpole stages originally described by Nieuwkoop and Faber in the Normal Table of Xenopus laevis (Daudin)."^^xsd:string ;
+                oboInOwl:created_by "eriksegerdell"^^xsd:string ;
+                oboInOwl:creation_date "2013-02-09T18:40:27Z"^^xsd:string ;
+                oboInOwl:hasExactSynonym "Nieuwkoop and Faber stage"^^xsd:string ,
+                                         "Nieuwkoop-Faber stage"^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000094"^^xsd:string ;
+                rdfs:label "NF stage"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000094 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Xenopus developmental stage that is one of the 66 standard chronological embryonic and tadpole stages originally described by Nieuwkoop and Faber in the Normal Table of Xenopus laevis (Daudin)."^^xsd:string ;
+   oboInOwl:hasDbXref "ISBN:0815318960"^^xsd:string ,
+                      "XAO:EJS"^^xsd:string
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/XAO_1000095
+obo:XAO_1000095 rdf:type owl:Class ;
+                rdfs:subClassOf obo:XAO_1000000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty xao:preceded_by ;
+                                  owl:someValuesFrom obo:XAO_1000012
+                                ] ;
+                obo:IAO_0000115 "Xenopus developmental stage that succeeds the embryonic stage."^^xsd:string ;
+                oboInOwl:hasDbXref "UBERON:0000092"^^xsd:string ;
+                oboInOwl:hasOBONamespace "xenopus_developmental_stage"^^xsd:string ;
+                oboInOwl:id "XAO:1000095"^^xsd:string ;
+                rdfs:label "post-embryonic stage"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:XAO_1000095 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "Xenopus developmental stage that succeeds the embryonic stage."^^xsd:string ;
+   oboInOwl:hasDbXref "XAO:EJS"^^xsd:string
+ ] .
+
+
+###  Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi

@@ -1,0 +1,718 @@
+{
+    "schemaPrefix": "http://www.bioassayontology.org/bas/MIARE#",
+    "root": 
+    {
+        "name": "MIARE",
+        "descr": "Minimum Information About an RNAi Experiment",
+        "groupURI": "http://www.bioassayexpress.org/bae#FAIR_0000049",
+        "assignments": [],
+        "subGroups": 
+        [
+            {
+                "name": "assay description",
+                "descr": "",
+                "groupURI": "http://www.bioassayexpress.org/bae#FAIR_0000042",
+                "assignments": 
+                [
+                    {
+                        "name": "assay identifier",
+                        "descr": "Assay ID/name",
+                        "propURI": "http://www.bioassayexpress.org/bae#FAIR_0000049",
+                        "suggestions": "full",
+                        "values": 
+                        [
+                            {
+                                "uri": "http://www.bioassayontology.org/bat#Absence",
+                                "name": "absence",
+                                "descr": "A group of annotations that explain why an annotation is missing, when it should not be.",
+                                "spec": "container"
+                            }, 
+                            {
+                                "uri": "http://www.bioassayexpress.org/bae#FAIR_0001164",
+                                "name": "assay identifier",
+                                "descr": "",
+                                "spec": "container"
+                            }
+                        ]
+                    }, 
+                    {
+                        "name": "assay type",
+                        "descr": "Assay type (primary/confirmatory/other)",
+                        "propURI": "http://www.bioassayexpress.org/bae#FAIR_0000050",
+                        "suggestions": "full",
+                        "values": 
+                        [
+                            {
+                                "uri": "http://www.bioassayontology.org/bat#Absence",
+                                "name": "absence",
+                                "descr": "A group of annotations that explain why an annotation is missing, when it should not be.",
+                                "spec": "container"
+                            }, 
+                            {
+                                "uri": "http://www.bioassayexpress.org/bae#FAIR_0001165",
+                                "name": "assay type",
+                                "descr": "",
+                                "spec": "container"
+                            }
+                        ]
+                    }, 
+                    {
+                        "name": "target organism",
+                        "descr": "Target organism (Taxonomy ID)",
+                        "propURI": "http://www.bioassayexpress.org/bae#FAIR_0000051",
+                        "suggestions": "full",
+                        "values": 
+                        [
+                            {
+                                "uri": "http://www.bioassayontology.org/bao#BAO_0000551",
+                                "name": "organism",
+                                "descr": "The organism related to the target / meta-target of the bioassay. It includes both bacterium and eukaryote.",
+                                "spec": "item"
+                            }
+                        ]
+                    }, 
+                    {
+                        "name": "knockdown genes",
+                        "descr": "Number of distinct genes targeted for knock-down",
+                        "propURI": "http://www.bioassayexpress.org/bae#FAIR_0000052",
+                        "suggestions": "full",
+                        "values": 
+                        [
+                            {
+                                "uri": "http://www.bioassayontology.org/bat#Absence",
+                                "name": "absence",
+                                "descr": "A group of annotations that explain why an annotation is missing, when it should not be.",
+                                "spec": "container"
+                            }, 
+                            {
+                                "uri": "http://www.bioassayexpress.org/bae#FAIR_0001166",
+                                "name": "knockdown genes",
+                                "descr": "",
+                                "spec": "container"
+                            }
+                        ]
+                    }, 
+                    {
+                        "name": "experimental description",
+                        "descr": "Title/description of experiment",
+                        "propURI": "http://www.bioassayexpress.org/bae#FAIR_0000053",
+                        "suggestions": "full",
+                        "values": 
+                        [
+                            {
+                                "uri": "http://www.bioassayontology.org/bat#Absence",
+                                "name": "absence",
+                                "descr": "A group of annotations that explain why an annotation is missing, when it should not be.",
+                                "spec": "container"
+                            }, 
+                            {
+                                "uri": "http://www.bioassayexpress.org/bae#FAIR_0001167",
+                                "name": "experimental description",
+                                "descr": "",
+                                "spec": "container"
+                            }
+                        ]
+                    }
+                ],
+                "subGroups": []
+            }, 
+            {
+                "name": "assay protocol",
+                "descr": "",
+                "groupURI": "http://www.bioassayexpress.org/bae#FAIR_0000043",
+                "assignments": 
+                [
+                    {
+                        "name": "biological question",
+                        "descr": "Biological question description - (including sample description and keywords)",
+                        "propURI": "http://www.bioassayexpress.org/bae#FAIR_0000054",
+                        "suggestions": "full",
+                        "values": 
+                        [
+                            {
+                                "uri": "http://www.bioassayontology.org/bat#Absence",
+                                "name": "absence",
+                                "descr": "A group of annotations that explain why an annotation is missing, when it should not be.",
+                                "spec": "container"
+                            }, 
+                            {
+                                "uri": "http://www.bioassayexpress.org/bae#FAIR_0001168",
+                                "name": "biological question",
+                                "descr": "",
+                                "spec": "container"
+                            }
+                        ]
+                    }, 
+                    {
+                        "name": "protocol and design",
+                        "descr": "Assay protocol and design - including number and description of replicates (biological/technical)",
+                        "propURI": "http://www.bioassayexpress.org/bae#FAIR_0000055",
+                        "suggestions": "full",
+                        "values": 
+                        [
+                            {
+                                "uri": "http://www.bioassayontology.org/bat#Absence",
+                                "name": "absence",
+                                "descr": "A group of annotations that explain why an annotation is missing, when it should not be.",
+                                "spec": "container"
+                            }, 
+                            {
+                                "uri": "http://www.bioassayexpress.org/bae#FAIR_0001169",
+                                "name": "protocol and design",
+                                "descr": "",
+                                "spec": "container"
+                            }
+                        ]
+                    }, 
+                    {
+                        "name": "pre/post treatment",
+                        "descr": "Pre- and post-treatment (protocol/type/compound)",
+                        "propURI": "http://www.bioassayexpress.org/bae#FAIR_0000056",
+                        "suggestions": "full",
+                        "values": 
+                        [
+                            {
+                                "uri": "http://www.bioassayontology.org/bat#Absence",
+                                "name": "absence",
+                                "descr": "A group of annotations that explain why an annotation is missing, when it should not be.",
+                                "spec": "container"
+                            }, 
+                            {
+                                "uri": "http://www.bioassayexpress.org/bae#FAIR_0001170",
+                                "name": "pre/post treatment",
+                                "descr": "",
+                                "spec": "container"
+                            }
+                        ]
+                    }, 
+                    {
+                        "name": "biomaterial manipulations",
+                        "descr": "Bio-material manipulations (including growth conditions/cell culture conditions and if applicable cell separation technique)",
+                        "propURI": "http://www.bioassayexpress.org/bae#FAIR_0000057",
+                        "suggestions": "full",
+                        "values": 
+                        [
+                            {
+                                "uri": "http://www.bioassayontology.org/bat#Absence",
+                                "name": "absence",
+                                "descr": "A group of annotations that explain why an annotation is missing, when it should not be.",
+                                "spec": "container"
+                            }, 
+                            {
+                                "uri": "http://www.bioassayexpress.org/bae#FAIR_0001171",
+                                "name": "biomaterial manipulations",
+                                "descr": "",
+                                "spec": "container"
+                            }
+                        ]
+                    }, 
+                    {
+                        "name": "cells per well",
+                        "descr": "Number of cells per well",
+                        "propURI": "http://www.bioassayexpress.org/bae#FAIR_0000058",
+                        "suggestions": "full",
+                        "values": 
+                        [
+                            {
+                                "uri": "http://www.bioassayontology.org/bat#Absence",
+                                "name": "absence",
+                                "descr": "A group of annotations that explain why an annotation is missing, when it should not be.",
+                                "spec": "container"
+                            }, 
+                            {
+                                "uri": "http://www.bioassayexpress.org/bae#FAIR_0001172",
+                                "name": "cells per well",
+                                "descr": "",
+                                "spec": "container"
+                            }
+                        ]
+                    }, 
+                    {
+                        "name": "assay reagent",
+                        "descr": "Assay reagent name and manufacturer",
+                        "propURI": "http://www.bioassayexpress.org/bae#FAIR_0000059",
+                        "suggestions": "full",
+                        "values": 
+                        [
+                            {
+                                "uri": "http://www.bioassayontology.org/bat#Absence",
+                                "name": "absence",
+                                "descr": "A group of annotations that explain why an annotation is missing, when it should not be.",
+                                "spec": "container"
+                            }, 
+                            {
+                                "uri": "http://www.bioassayexpress.org/bae#FAIR_0001173",
+                                "name": "assay reagent",
+                                "descr": "",
+                                "spec": "container"
+                            }
+                        ]
+                    }, 
+                    {
+                        "name": "instrument",
+                        "descr": "Instrument name, manufacturer, readout and settings",
+                        "propURI": "http://www.bioassayexpress.org/bae#FAIR_0000101",
+                        "suggestions": "full",
+                        "values": 
+                        [
+                            {
+                                "uri": "http://www.bioassayontology.org/bat#Absence",
+                                "name": "absence",
+                                "descr": "A group of annotations that explain why an annotation is missing, when it should not be.",
+                                "spec": "container"
+                            }, 
+                            {
+                                "uri": "http://www.bioassayexpress.org/bae#FAIR_0001174",
+                                "name": "instrument",
+                                "descr": "",
+                                "spec": "container"
+                            }
+                        ]
+                    }
+                ],
+                "subGroups": []
+            }, 
+            {
+                "name": "delivery",
+                "descr": "",
+                "groupURI": "http://www.bioassayexpress.org/bae#FAIR_0000044",
+                "assignments": 
+                [
+                    {
+                        "name": "delivery",
+                        "descr": "Delivery type and protocol",
+                        "propURI": "http://www.bioassayexpress.org/bae#FAIR_0000060",
+                        "suggestions": "full",
+                        "values": 
+                        [
+                            {
+                                "uri": "http://www.bioassayontology.org/bat#Absence",
+                                "name": "absence",
+                                "descr": "A group of annotations that explain why an annotation is missing, when it should not be.",
+                                "spec": "container"
+                            }, 
+                            {
+                                "uri": "http://www.bioassayexpress.org/bae#FAIR_0001175",
+                                "name": "delivery",
+                                "descr": "",
+                                "spec": "container"
+                            }
+                        ]
+                    }, 
+                    {
+                        "name": "cell confluence",
+                        "descr": "Percentage of cell confluence (if applicable) ",
+                        "propURI": "http://www.bioassayexpress.org/bae#FAIR_0000061",
+                        "suggestions": "full",
+                        "values": 
+                        [
+                            {
+                                "uri": "http://www.bioassayontology.org/bat#Absence",
+                                "name": "absence",
+                                "descr": "A group of annotations that explain why an annotation is missing, when it should not be.",
+                                "spec": "container"
+                            }, 
+                            {
+                                "uri": "http://www.bioassayexpress.org/bae#FAIR_0001176",
+                                "name": "cell confluence",
+                                "descr": "",
+                                "spec": "container"
+                            }
+                        ]
+                    }, 
+                    {
+                        "name": "complexing protocol",
+                        "descr": "Complexing protocol and time",
+                        "propURI": "http://www.bioassayexpress.org/bae#FAIR_0000062",
+                        "suggestions": "full",
+                        "values": 
+                        [
+                            {
+                                "uri": "http://www.bioassayontology.org/bat#Absence",
+                                "name": "absence",
+                                "descr": "A group of annotations that explain why an annotation is missing, when it should not be.",
+                                "spec": "container"
+                            }, 
+                            {
+                                "uri": "http://www.bioassayexpress.org/bae#FAIR_0001177",
+                                "name": "complexing protocol",
+                                "descr": "",
+                                "spec": "container"
+                            }
+                        ]
+                    }, 
+                    {
+                        "name": "reagent",
+                        "descr": "Delivery reagent name type and manufacturer",
+                        "propURI": "http://www.bioassayexpress.org/bae#FAIR_0000063",
+                        "suggestions": "full",
+                        "values": 
+                        [
+                            {
+                                "uri": "http://www.bioassayontology.org/bat#Absence",
+                                "name": "absence",
+                                "descr": "A group of annotations that explain why an annotation is missing, when it should not be.",
+                                "spec": "container"
+                            }, 
+                            {
+                                "uri": "http://www.bioassayexpress.org/bae#FAIR_0001178",
+                                "name": "reagent",
+                                "descr": "",
+                                "spec": "container"
+                            }
+                        ]
+                    }, 
+                    {
+                        "name": "final concentration",
+                        "descr": "Delivery reagent  and silencing reagent final concentrations",
+                        "propURI": "http://www.bioassayexpress.org/bae#FAIR_0000064",
+                        "suggestions": "full",
+                        "values": 
+                        [
+                            {
+                                "uri": "http://www.bioassayontology.org/bat#Absence",
+                                "name": "absence",
+                                "descr": "A group of annotations that explain why an annotation is missing, when it should not be.",
+                                "spec": "container"
+                            }, 
+                            {
+                                "uri": "http://www.bioassayexpress.org/bae#FAIR_0001179",
+                                "name": "final concentration",
+                                "descr": "",
+                                "spec": "container"
+                            }
+                        ]
+                    }
+                ],
+                "subGroups": []
+            }, 
+            {
+                "name": "silencing RNA reagent",
+                "descr": "",
+                "groupURI": "http://www.bioassayexpress.org/bae#FAIR_0000045",
+                "assignments": 
+                [
+                    {
+                        "name": "reagent ID",
+                        "descr": "Silencing RNA reagent ID",
+                        "propURI": "http://www.bioassayexpress.org/bae#FAIR_0000065",
+                        "suggestions": "full",
+                        "values": 
+                        [
+                            {
+                                "uri": "http://www.bioassayontology.org/bat#Absence",
+                                "name": "absence",
+                                "descr": "A group of annotations that explain why an annotation is missing, when it should not be.",
+                                "spec": "container"
+                            }
+                        ]
+                    }, 
+                    {
+                        "name": "probe ID",
+                        "descr": "Probe ID",
+                        "propURI": "http://www.bioassayexpress.org/bae#FAIR_0000066",
+                        "suggestions": "full",
+                        "values": 
+                        [
+                            {
+                                "uri": "http://www.bioassayontology.org/bat#Absence",
+                                "name": "absence",
+                                "descr": "A group of annotations that explain why an annotation is missing, when it should not be.",
+                                "spec": "container"
+                            }
+                        ]
+                    }, 
+                    {
+                        "name": "target gene ID",
+                        "descr": "Target gene ID or accession number (NCBI/EMBL/DDBJ), and name",
+                        "propURI": "http://www.bioassayexpress.org/bae#FAIR_0000067",
+                        "suggestions": "full",
+                        "values": 
+                        [
+                            {
+                                "uri": "http://www.bioassayontology.org/bat#Absence",
+                                "name": "absence",
+                                "descr": "A group of annotations that explain why an annotation is missing, when it should not be.",
+                                "spec": "container"
+                            }
+                        ]
+                    }, 
+                    {
+                        "name": "taxonomy ID",
+                        "descr": "Taxonomy ID",
+                        "propURI": "http://www.bioassayexpress.org/bae#FAIR_0000068",
+                        "suggestions": "full",
+                        "values": 
+                        [
+                            {
+                                "uri": "http://www.bioassayontology.org/bat#Absence",
+                                "name": "absence",
+                                "descr": "A group of annotations that explain why an annotation is missing, when it should not be.",
+                                "spec": "container"
+                            }
+                        ]
+                    }
+                ],
+                "subGroups": []
+            }, 
+            {
+                "name": "assay plate description",
+                "descr": "",
+                "groupURI": "http://www.bioassayexpress.org/bae#FAIR_0000046",
+                "assignments": 
+                [
+                    {
+                        "name": "plate information",
+                        "descr": "Assay plate name, type and manufacturer",
+                        "propURI": "http://www.bioassayexpress.org/bae#FAIR_0000069",
+                        "suggestions": "full",
+                        "values": 
+                        [
+                            {
+                                "uri": "http://www.bioassayontology.org/bat#Absence",
+                                "name": "absence",
+                                "descr": "A group of annotations that explain why an annotation is missing, when it should not be.",
+                                "spec": "container"
+                            }, 
+                            {
+                                "uri": "http://www.bioassayexpress.org/bae#FAIR_0001180",
+                                "name": "plate information",
+                                "descr": "",
+                                "spec": "container"
+                            }
+                        ]
+                    }, 
+                    {
+                        "name": "media changes",
+                        "descr": "Media changes and composition",
+                        "propURI": "http://www.bioassayexpress.org/bae#FAIR_0000070",
+                        "suggestions": "full",
+                        "values": 
+                        [
+                            {
+                                "uri": "http://www.bioassayontology.org/bat#Absence",
+                                "name": "absence",
+                                "descr": "A group of annotations that explain why an annotation is missing, when it should not be.",
+                                "spec": "container"
+                            }, 
+                            {
+                                "uri": "http://www.bioassayexpress.org/bae#FAIR_0001181",
+                                "name": "media changes",
+                                "descr": "",
+                                "spec": "container"
+                            }
+                        ]
+                    }
+                ],
+                "subGroups": []
+            }, 
+            {
+                "name": "results",
+                "descr": "",
+                "groupURI": "http://www.bioassayexpress.org/bae#FAIR_0000047",
+                "assignments": 
+                [
+                    {
+                        "name": "data analysis",
+                        "descr": "Data analysis",
+                        "propURI": "http://www.bioassayexpress.org/bae#FAIR_0000071",
+                        "suggestions": "full",
+                        "values": 
+                        [
+                            {
+                                "uri": "http://www.bioassayontology.org/bat#Absence",
+                                "name": "absence",
+                                "descr": "A group of annotations that explain why an annotation is missing, when it should not be.",
+                                "spec": "container"
+                            }, 
+                            {
+                                "uri": "http://www.bioassayexpress.org/bae#FAIR_0001182",
+                                "name": "data analysis",
+                                "descr": "",
+                                "spec": "container"
+                            }
+                        ]
+                    }, 
+                    {
+                        "name": "bioactivity outcome",
+                        "descr": "Bioactivity outcome threshold, score and normalization method",
+                        "propURI": "http://www.bioassayexpress.org/bae#FAIR_0000072",
+                        "suggestions": "full",
+                        "values": 
+                        [
+                            {
+                                "uri": "http://www.bioassayontology.org/bat#Absence",
+                                "name": "absence",
+                                "descr": "A group of annotations that explain why an annotation is missing, when it should not be.",
+                                "spec": "container"
+                            }, 
+                            {
+                                "uri": "http://www.bioassayexpress.org/bae#FAIR_0001183",
+                                "name": "bioactivity outcome",
+                                "descr": "",
+                                "spec": "container"
+                            }
+                        ]
+                    }, 
+                    {
+                        "name": "artefacts",
+                        "descr": "Artefacts",
+                        "propURI": "http://www.bioassayexpress.org/bae#FAIR_0000073",
+                        "suggestions": "full",
+                        "values": 
+                        [
+                            {
+                                "uri": "http://www.bioassayontology.org/bat#Absence",
+                                "name": "absence",
+                                "descr": "A group of annotations that explain why an annotation is missing, when it should not be.",
+                                "spec": "container"
+                            }, 
+                            {
+                                "uri": "http://www.bioassayexpress.org/bae#FAIR_0001184",
+                                "name": "artefacts",
+                                "descr": "",
+                                "spec": "container"
+                            }
+                        ]
+                    }, 
+                    {
+                        "name": "data filtering",
+                        "descr": "Data filtering and transformation description",
+                        "propURI": "http://www.bioassayexpress.org/bae#FAIR_0000074",
+                        "suggestions": "full",
+                        "values": 
+                        [
+                            {
+                                "uri": "http://www.bioassayontology.org/bat#Absence",
+                                "name": "absence",
+                                "descr": "A group of annotations that explain why an annotation is missing, when it should not be.",
+                                "spec": "container"
+                            }, 
+                            {
+                                "uri": "http://www.bioassayexpress.org/bae#FAIR_0001185",
+                                "name": "data filtering",
+                                "descr": "",
+                                "spec": "container"
+                            }
+                        ]
+                    }, 
+                    {
+                        "name": "analysis software",
+                        "descr": "Analysis program name and version",
+                        "propURI": "http://www.bioassayexpress.org/bae#FAIR_0000075",
+                        "suggestions": "full",
+                        "values": 
+                        [
+                            {
+                                "uri": "http://www.bioassayontology.org/bat#Absence",
+                                "name": "absence",
+                                "descr": "A group of annotations that explain why an annotation is missing, when it should not be.",
+                                "spec": "container"
+                            }, 
+                            {
+                                "uri": "http://www.bioassayexpress.org/bae#FAIR_0001186",
+                                "name": "analysis software",
+                                "descr": "",
+                                "spec": "container"
+                            }
+                        ]
+                    }
+                ],
+                "subGroups": []
+            }, 
+            {
+                "name": "result definitions",
+                "descr": "",
+                "groupURI": "http://www.bioassayexpress.org/bae#FAIR_0000048",
+                "assignments": 
+                [
+                    {
+                        "name": "data columns",
+                        "descr": "Data column definitions for assay results",
+                        "propURI": "http://www.bioassayexpress.org/bae#FAIR_0000076",
+                        "suggestions": "full",
+                        "values": 
+                        [
+                            {
+                                "uri": "http://www.bioassayontology.org/bat#Absence",
+                                "name": "absence",
+                                "descr": "A group of annotations that explain why an annotation is missing, when it should not be.",
+                                "spec": "container"
+                            }, 
+                            {
+                                "uri": "http://www.bioassayexpress.org/bae#FAIR_0001187",
+                                "name": "data columns",
+                                "descr": "",
+                                "spec": "container"
+                            }
+                        ]
+                    }, 
+                    {
+                        "name": "data types",
+                        "descr": "Data types and units for each column",
+                        "propURI": "http://www.bioassayexpress.org/bae#FAIR_0000077",
+                        "suggestions": "full",
+                        "values": 
+                        [
+                            {
+                                "uri": "http://www.bioassayontology.org/bat#Absence",
+                                "name": "absence",
+                                "descr": "A group of annotations that explain why an annotation is missing, when it should not be.",
+                                "spec": "container"
+                            }, 
+                            {
+                                "uri": "http://www.bioassayexpress.org/bae#FAIR_0001188",
+                                "name": "data types",
+                                "descr": "",
+                                "spec": "container"
+                            }
+                        ]
+                    }, 
+                    {
+                        "name": "quantitative data",
+                        "descr": "Quantitative data description",
+                        "propURI": "http://www.bioassayexpress.org/bae#FAIR_0000078",
+                        "suggestions": "full",
+                        "values": 
+                        [
+                            {
+                                "uri": "http://www.bioassayontology.org/bat#Absence",
+                                "name": "absence",
+                                "descr": "A group of annotations that explain why an annotation is missing, when it should not be.",
+                                "spec": "container"
+                            }, 
+                            {
+                                "uri": "http://www.bioassayexpress.org/bae#FAIR_0001189",
+                                "name": "quantitative data",
+                                "descr": "",
+                                "spec": "container"
+                            }
+                        ]
+                    }, 
+                    {
+                        "name": "qualitative data",
+                        "descr": "Qualitative data description",
+                        "propURI": "http://www.bioassayexpress.org/bae#FAIR_0000079",
+                        "suggestions": "full",
+                        "values": 
+                        [
+                            {
+                                "uri": "http://www.bioassayontology.org/bat#Absence",
+                                "name": "absence",
+                                "descr": "A group of annotations that explain why an annotation is missing, when it should not be.",
+                                "spec": "container"
+                            }, 
+                            {
+                                "uri": "http://www.bioassayexpress.org/bae#FAIR_0001190",
+                                "name": "qualitative data",
+                                "descr": "",
+                                "spec": "container"
+                            }
+                        ]
+                    }
+                ],
+                "subGroups": []
+            }
+        ]
+    }
+}

@@ -1,0 +1,2499 @@
+# extra terms that are needed for the FAIR data annotation templates
+
+@prefix bao:   <http://www.bioassayontology.org/bao#> .
+@prefix bat:   <http://www.bioassayontology.org/bat#> .
+@prefix bae:   <http://www.bioassayexpress.org/bae#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obo:   <http://purl.obolibrary.org/obo/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+
+# ------------ property & group terms ------------
+
+bae:FAIR_0000001
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has library" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000002
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has biosample package" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000003
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has biosample details" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000004
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has library strategy" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000005
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has construction kit" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000006
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has library source" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000007
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has library selection" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000008
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has library layout" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000009
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has instrument platform" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000010
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has sample ID" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000011
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has biosample format" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000012
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has biosample type" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000013
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has biomaterial provider" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000014
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has geographic origin" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000015
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has biosample strain" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000016
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has biosample host" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000017
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has biosample age" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000018
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has biosample sex" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000019
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has developmental stage" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000020
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has tissue" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000021
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has phenotype" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000022
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has experiment overview" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000023
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has flow sample" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000024
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has data analysis" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000025
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has instrument details" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000026
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has goal" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000027
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has experiment variables" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000028
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has conclusins" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000029
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has quality control" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000030
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has material" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000031
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has source/organism/location" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000032
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has treatment" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000033
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has reagent/analyte/detector/reporter" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000034
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has list-mode data" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000035
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has compensation" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000036
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has gating" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000037
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has descriptive statistics" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000038
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has instrument identification" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000039
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has fluidics configuration" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000040
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has optical configuration" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000041
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has electronic configuration" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000042
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has assay description" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000043
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has assay protocol" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000044
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has delivery" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000045
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has silencing RNA reagent" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000046
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has assay plate description" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000047
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has results" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000048
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has result definitions" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000049
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has assay identifier" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000050
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has assay type" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000051
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has target organism" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000052
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has knockdown genes" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000053
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has experimental design" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000054
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has biological question" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000055
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has protocol/design" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000056
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has pre/post treatment" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000057
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has biomaterial manipulations" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000058
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has cells per well" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000059
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has assay reagent" ;
+  obo:IAO_0000115 "has instrument"
+  .
+
+bae:FAIR_0000060
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has delivery" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000061
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has cell confluence" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000062
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has complexing protocol" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000063
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has reagent" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000064
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has final concentration" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000065
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has reagent ID" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000066
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has probe ID" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000067
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has target gene ID" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000068
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has taxonomy ID" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000069
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has plate information" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000070
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has media changes" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000071
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has data analysis" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000072
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has bioactivity outcome" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000073
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has artefacts" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000074
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has data filtering" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000075
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has analysis software" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000076
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has data columns" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000077
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has data types" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000078
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has quantitative data" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000079
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has qualitative data" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000080
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has experimental design" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000081
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has sample" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000082
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has nucleic acid extraction" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000083
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has reverse transcription" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000084
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has qPCR target information" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000085
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has qPCR oligonucleotides" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000086
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has qPCR protocol" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000087
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has qPCR validation" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000088
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has data analysis" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000089
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has experimental/control groups" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000090
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has number in group" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000091
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has dissection" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000092
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has processing procedure" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000093
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has frozen" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000094
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has fixed" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000095
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has sample storage" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000096
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has procedure/instrumentation" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000097
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has extraction kit" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000098
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has DNase or RNase treatment" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000099
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has contamination assessment" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000100
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has quantification" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000101
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has instrument and method" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000102
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has RNA integrity" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000103
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has electrophoresis" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000104
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has reaction conditions" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000105
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has reaction volume" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000106
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has priming oligonucleotide" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000107
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has reverse transcriptase" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000108
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has temperature and time" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000109
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has gene symbol" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000110
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has sequence accession" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000111
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has amplicon length" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000112
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has virtual specificity screen" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000113
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has primer location" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000114
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has splice variants" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000115
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has primer sequences" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000116
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has modifications" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000117
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has reaction conditions" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000118
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has reaction volume" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000119
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has primer" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000120
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has polymerase" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000121
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has buffer/kit" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000122
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has additives" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000123
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has thermocycling" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000124
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has instrument manufacturer" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000125
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has specificity" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000126
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has calibration curves" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000127
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has PCF efficiency" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000128
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has analysis program" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000129
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has Cq determination" ;
+  obo:IAO_0000115 ""
+  .
+  
+bae:FAIR_0000130
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has repeatability" ;
+  obo:IAO_0000115 ""
+  .
+  
+bae:FAIR_0000131
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has biomaterials and treatments" ;
+  obo:IAO_0000115 ""
+  .
+  
+bae:FAIR_0000132
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has reporter (probe or antibody) information" ;
+  obo:IAO_0000115 ""
+  .
+  
+bae:FAIR_0000133
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has staining protocols and parameters" ;
+  obo:IAO_0000115 ""
+  .
+  
+bae:FAIR_0000134
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has imaging data and parameters" ;
+  obo:IAO_0000115 ""
+  .
+  
+bae:FAIR_0000135
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has image characterizations" ;
+  obo:IAO_0000115 ""
+  .
+  
+bae:FAIR_0000136
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has experiment description" ;
+  obo:IAO_0000115 ""
+  .
+  
+bae:FAIR_0000137
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has assay types" ;
+  obo:IAO_0000115 ""
+  .
+  
+bae:FAIR_0000138
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has experimental design" ;
+  obo:IAO_0000115 ""
+  .
+  
+bae:FAIR_0000139
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has experimental factors" ;
+  obo:IAO_0000115 ""
+  .
+  
+bae:FAIR_0000140
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has attributes of the individual" ;
+  obo:IAO_0000115 ""
+  .
+  
+bae:FAIR_0000141
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has physiologic state" ;
+  obo:IAO_0000115 ""
+  .
+  
+bae:FAIR_0000142
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has relevant exogenous factors" ;
+  obo:IAO_0000115 ""
+  .
+  
+bae:FAIR_0000143
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has anatomic source of speciments" ;
+  obo:IAO_0000115 ""
+  .
+  
+bae:FAIR_0000144
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has assay preparation protocol" ;
+  obo:IAO_0000115 ""
+  .
+  
+bae:FAIR_0000145
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has reporter identification" ;
+  obo:IAO_0000115 ""
+  .
+  
+bae:FAIR_0000146
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has sequence/clone ID" ;
+  obo:IAO_0000115 ""
+  .
+  
+bae:FAIR_0000147
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has protocol for obtaining" ;
+  obo:IAO_0000115 ""
+  .
+  
+bae:FAIR_0000148
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has detection method" ;
+  obo:IAO_0000115 ""
+  .
+  
+bae:FAIR_0000149
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has staining protocol" ;
+  obo:IAO_0000115 ""
+  .
+  
+bae:FAIR_0000150
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has positive/negative controls" ;
+  obo:IAO_0000115 ""
+  .
+  
+bae:FAIR_0000151
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has images for each assay" ;
+  obo:IAO_0000115 ""
+  .
+  
+bae:FAIR_0000152
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has detection method" ;
+  obo:IAO_0000115 ""
+  .
+  
+bae:FAIR_0000153
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has structural units" ;
+  obo:IAO_0000115 ""
+  .
+  
+bae:FAIR_0000154
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has intensity scale" ;
+  obo:IAO_0000115 ""
+  .
+  
+bae:FAIR_0000155
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has results in tabular form" ;
+  obo:IAO_0000115 ""
+  .
+    
+# ------------ annotation terms ------------
+
+bae:FAIR_0001000
+  rdfs:label "custom FAIR terms" ;
+  obo:IAO_0000115 "Branch for terms used for the FAIR Data Hackathon 2019"
+  .
+
+bae:FAIR_0001001
+  rdfs:label "strategy" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 "" 
+  .
+
+bae:FAIR_0001002
+  rdfs:label "WGA" ;
+  rdfs:subClassOf bae:FAIR_0001001 ;
+  obo:IAO_0000115 "Random sequencing of the whole genome following non-pcr amplification"
+  .
+
+bae:FAIR_0001003
+  rdfs:label "WGS" ;
+  rdfs:subClassOf bae:FAIR_0001001 ;
+  obo:IAO_0000115 "Random sequencing of the whole genome"
+  .
+
+bae:FAIR_0001004
+  rdfs:label "WXS" ;
+  rdfs:subClassOf bae:FAIR_0001001 ;
+  obo:IAO_0000115 "Random sequencing of exonic regions selected from the genome"
+  .
+
+bae:FAIR_0001005
+  rdfs:label "RNA-Seq" ;
+  rdfs:subClassOf bae:FAIR_0001001 ;
+  obo:IAO_0000115 "Random sequencing of whole transcriptome"
+  .
+
+bae:FAIR_0001006
+  rdfs:label "miRNA-Seq" ;
+  rdfs:subClassOf bae:FAIR_0001001 ;
+  obo:IAO_0000115 "Random sequencing of small miRNAs"
+  .
+
+bae:FAIR_0001007
+  rdfs:label "WCS" ;
+  rdfs:subClassOf bae:FAIR_0001001 ;
+  obo:IAO_0000115 "Random sequencing of a whole chromosome or other replicon isolated from a genome"
+  .
+
+bae:FAIR_0001008
+  rdfs:label "CLONE" ;
+  rdfs:subClassOf bae:FAIR_0001001 ;
+  obo:IAO_0000115 "Genomic clone based (hierarchical) sequencing"
+  .
+
+bae:FAIR_0001009
+  rdfs:label "POOLCLONE" ;
+  rdfs:subClassOf bae:FAIR_0001001 ;
+  obo:IAO_0000115 "Shotgun of pooled clones (usually BACs and Fosmids)"
+  .
+
+bae:FAIR_0001010
+  rdfs:label "AMPLICON" ;
+  rdfs:subClassOf bae:FAIR_0001001 ;
+  obo:IAO_0000115 "Sequencing of overlapping or distinct PCR or RT-PCR products"
+  .
+
+bae:FAIR_0001011
+  rdfs:label "CLONEEND" ;
+  rdfs:subClassOf bae:FAIR_0001001 ;
+  obo:IAO_0000115 "Clone end (5', 3', or both) sequencing"
+  .
+
+bae:FAIR_0001012
+  rdfs:label "FINISHING" ;
+  rdfs:subClassOf bae:FAIR_0001001 ;
+  obo:IAO_0000115 "Sequencing intended to finish (close) gaps in existing coverage"
+  .
+
+bae:FAIR_0001013
+  rdfs:label "ChIP-Seq" ;
+  rdfs:subClassOf bae:FAIR_0001001 ;
+  obo:IAO_0000115 "Direct sequencing of chromatin immunoprecipitates"
+  .
+
+bae:FAIR_0001014
+  rdfs:label "MNase-Seq" ;
+  rdfs:subClassOf bae:FAIR_0001001 ;
+  obo:IAO_0000115 "Direct sequencing following MNase digestion"
+  .
+
+bae:FAIR_0001015
+  rdfs:label "DNase-Hypersensitivity" ;
+  rdfs:subClassOf bae:FAIR_0001001 ;
+  obo:IAO_0000115 "Sequencing of hypersensitive sites, or segments of open chromatin that are more readily cleaved by DNaseI"
+  .
+
+bae:FAIR_0001016
+  rdfs:label "Bisulfite-Seq" ;
+  rdfs:subClassOf bae:FAIR_0001001 ;
+  obo:IAO_0000115 "Sequencing following treatment of DNA with bisulfite to convert cytosine residues to uracil depending on methylation status"
+  .
+
+bae:FAIR_0001017
+  rdfs:label "Tn-Seq" ;
+  rdfs:subClassOf bae:FAIR_0001001 ;
+  obo:IAO_0000115 "Sequencing from transposon insertion sites"
+  .
+
+bae:FAIR_0001018
+  rdfs:label "EST" ;
+  rdfs:subClassOf bae:FAIR_0001001 ;
+  obo:IAO_0000115 "Single pass sequencing of cDNA templates"
+  .
+
+bae:FAIR_0001019
+  rdfs:label "FL-cDNA" ;
+  rdfs:subClassOf bae:FAIR_0001001 ;
+  obo:IAO_0000115 "Full-length sequencing of cDNA templates"
+  .
+
+bae:FAIR_0001020
+  rdfs:label "CTS" ;
+  rdfs:subClassOf bae:FAIR_0001001 ;
+  obo:IAO_0000115 "Concatenated Tag Sequencing"
+  .
+
+bae:FAIR_0001021
+  rdfs:label "MRE-Seq" ;
+  rdfs:subClassOf bae:FAIR_0001001 ;
+  obo:IAO_0000115 "Methylation-Sensitive Restriction Enzyme Sequencing strategy"
+  .
+
+bae:FAIR_0001022
+  rdfs:label "MeDIP-Seq" ;
+  rdfs:subClassOf bae:FAIR_0001001 ;
+  obo:IAO_0000115 "Methylated DNA Immunoprecipitation Sequencing strategy"
+  .
+
+bae:FAIR_0001023
+  rdfs:label "MBD-Seq" ;
+  rdfs:subClassOf bae:FAIR_0001001 ;
+  obo:IAO_0000115 "Direct sequencing of methylated fractions sequencing strategy"
+  .
+
+bae:FAIR_0001024
+  rdfs:label "Synthetic-Long-Read" ;
+  rdfs:subClassOf bae:FAIR_0001001 
+  .
+
+bae:FAIR_0001025
+  rdfs:label "ATAC-seq" ;
+  rdfs:subClassOf bae:FAIR_0001001 ;
+  obo:IAO_0000115 "Assay for Transposase-Accessible Chromatin (ATAC) strategy is used to study genome-wide chromatin accessibility. alternative method to DNase-seq that uses an engineered Tn5 transposase to cleave DNA and to integrate primer DNA sequences into the cleaved genomic DNA"
+  .
+
+bae:FAIR_0001026
+  rdfs:label "ChIA-PET" ;
+  rdfs:subClassOf bae:FAIR_0001001 ;
+  obo:IAO_0000115 "Direct sequencing of proximity-ligated chromatin immunoprecipitates."
+  .
+
+bae:FAIR_0001027
+  rdfs:label "FAIRE-seq" ;
+  rdfs:subClassOf bae:FAIR_0001001 ;
+  obo:IAO_0000115 "Formaldehyde Assisted Isolation of Regulatory Elements. reveals regions of open chromatin"
+  .
+
+bae:FAIR_0001028
+  rdfs:label "Hi-C" ;
+  rdfs:subClassOf bae:FAIR_0001001 ;
+  obo:IAO_0000115 "Chromosome Conformation Capture technique where a biotin-labeled nucleotide is incorporated at the ligation junction, enabling selective purification of chimeric DNA ligation junctions followed by deep sequencing"
+  .
+
+bae:FAIR_0001029
+  rdfs:label "ncRNA-Seq" ;
+  rdfs:subClassOf bae:FAIR_0001001 ;
+  obo:IAO_0000115 "Capture of other non-coding RNA types, including post-translation modification types such as snRNA (small nuclear RNA) or snoRNA (small nucleolar RNA), or expression regulation types such as siRNA (small interfering RNA) or piRNA/piwi/RNA (piwi-interacting RNA)."
+  .
+
+bae:FAIR_0001030
+  rdfs:label "RAD-Seq" ;
+  rdfs:subClassOf bae:FAIR_0001001
+  .
+
+bae:FAIR_0001031
+  rdfs:label "RIP-Seq" ;
+  rdfs:subClassOf bae:FAIR_0001001 ;
+  obo:IAO_0000115 "Direct sequencing of RNA immunoprecipitates (includes CLIP-Seq, HITS-CLIP and PAR-CLIP)."
+  .
+
+bae:FAIR_0001032
+  rdfs:label "SELEX" ;
+  rdfs:subClassOf bae:FAIR_0001001 ;
+  obo:IAO_0000115 "Systematic Evolution of Ligands by EXponential enrichment"
+  .
+
+bae:FAIR_0001033
+  rdfs:label "ssRNA-seq" ;
+  rdfs:subClassOf bae:FAIR_0001001 ;
+  obo:IAO_0000115 "strand-specific RNA sequencing"
+  .
+
+bae:FAIR_0001034
+  rdfs:label "Targeted-Capture" ;  
+  rdfs:subClassOf bae:FAIR_0001001 ;
+  obo:IAO_0000115 "Tethered Chromatin Conformation Capture"
+  .
+
+bae:FAIR_0001035
+  rdfs:label "library source" ;
+  obo:IAO_0000115 "" 
+  .
+
+bae:FAIR_0001036
+  rdfs:label "genomic" ;
+  rdfs:subClassOf bae:FAIR_0001035 ;
+  obo:IAO_0000115 "Genomic DNA (includes PCR products from genomic DNA)"
+  .
+
+bae:FAIR_0001037
+  rdfs:label "transcriptomic" ;
+  rdfs:subClassOf bae:FAIR_0001035 ;
+  obo:IAO_0000115 "Transcription products or non genomic DNA (EST, cDNA, RT-PCR, screened libraries)"
+  .
+
+bae:FAIR_0001038
+  rdfs:label "metagenomic" ;
+  rdfs:subClassOf bae:FAIR_0001035 ;
+  obo:IAO_0000115 "Mixed material from metagenome"
+  .
+
+bae:FAIR_0001039
+  rdfs:label "metatranscriptomic" ;
+  rdfs:subClassOf bae:FAIR_0001035 ;
+  obo:IAO_0000115 "Transcription products from community targets"
+  .
+
+bae:FAIR_0001040
+  rdfs:label "synthetic" ;
+  rdfs:subClassOf bae:FAIR_0001035 ;
+  obo:IAO_0000115 "Synthetic DNA"
+  .
+
+bae:FAIR_0001041
+  rdfs:label "viral RNA" ;
+  rdfs:subClassOf bae:FAIR_0001035 ;
+  obo:IAO_0000115 "Viral RNA"
+  .
+
+bae:FAIR_0001042
+  rdfs:label "genomic single cell" ;
+  rdfs:subClassOf bae:FAIR_0001035 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001043
+  rdfs:label "transcriptomic single cell" ;
+  rdfs:subClassOf bae:FAIR_0001035 ;
+  obo:IAO_0000115 ""
+  .
+   
+bae:FAIR_0001044
+  rdfs:label "library selection" ;
+  obo:IAO_0000115 "" 
+  .
+
+bae:FAIR_0001045
+  rdfs:label "RANDOM" ;
+  rdfs:subClassOf bae:FAIR_0001044 ;
+  obo:IAO_0000115 "Random selection by shearing or other method"
+  .
+
+bae:FAIR_0001046
+  rdfs:label "PCR" ;
+  rdfs:subClassOf bae:FAIR_0001044 ;
+  obo:IAO_0000115 "Source material was selected by designed primers"
+  .
+
+bae:FAIR_0001047
+  rdfs:label "RANDOM PCR" ;
+  rdfs:subClassOf bae:FAIR_0001044 ;
+  obo:IAO_0000115 "Source material was selected by randomly generated primers"
+  .
+
+bae:FAIR_0001048
+  rdfs:label "RT-PCR" ;
+  rdfs:subClassOf bae:FAIR_0001044 ;
+  obo:IAO_0000115 "Source material was selected by reverse transcription PCR"
+  .
+
+bae:FAIR_0001049
+  rdfs:label "HMPR" ;
+  rdfs:subClassOf bae:FAIR_0001044 ;
+  obo:IAO_0000115 "Hypo-methylated partial restriction digest"
+  .
+
+bae:FAIR_0001050
+  rdfs:label "MF" ;
+  rdfs:subClassOf bae:FAIR_0001044 ;
+  obo:IAO_0000115 "Methyl Filtrated"
+  .
+
+bae:FAIR_0001051
+  rdfs:label "CF-S" ;
+  rdfs:subClassOf bae:FAIR_0001044 ;
+  obo:IAO_0000115 "Cot-filtered single/low-copy genomic DNA"
+  .
+
+bae:FAIR_0001052
+  rdfs:label "CF-M" ;
+  rdfs:subClassOf bae:FAIR_0001044 ;
+  obo:IAO_0000115 "Cot-filtered moderately repetitive genomic DNA"
+  .
+
+bae:FAIR_0001053
+  rdfs:label "CF-H" ;
+  rdfs:subClassOf bae:FAIR_0001044 ;
+  obo:IAO_0000115 "Cot-filtered highly repetitive genomic DNA"
+  .
+
+bae:FAIR_0001054
+  rdfs:label "CF-T" ;
+  rdfs:subClassOf bae:FAIR_0001044 ;
+  obo:IAO_0000115 "Cot-filtered theoretical single-copy genomic DNA"
+  .
+
+bae:FAIR_0001055
+  rdfs:label "MDA" ;
+  rdfs:subClassOf bae:FAIR_0001044 ;
+  obo:IAO_0000115 "Multiple displacement amplification"
+  .
+
+bae:FAIR_0001056
+  rdfs:label "MSLL" ;
+  rdfs:subClassOf bae:FAIR_0001044 ;
+  obo:IAO_0000115 "Methylation Spanning Linking Library"
+  .
+
+bae:FAIR_0001057
+  rdfs:label "cDNA" ;
+  rdfs:subClassOf bae:FAIR_0001044 ;
+  obo:IAO_0000115 "Complementary DNA"
+  .
+
+bae:FAIR_0001058
+  rdfs:label "ChIP" ;
+  rdfs:subClassOf bae:FAIR_0001044 ;
+  obo:IAO_0000115 "Chromatin immunoprecipitation"
+  .
+
+bae:FAIR_0001059
+  rdfs:label "MNase" ;
+  rdfs:subClassOf bae:FAIR_0001044 ;
+  obo:IAO_0000115 "Micrococcal Nuclease (MNase) digestion"
+  .
+
+bae:FAIR_0001060
+  rdfs:label "DNAse" ;
+  rdfs:subClassOf bae:FAIR_0001044 ;
+  obo:IAO_0000115 "Deoxyribonuclease (MNase) digestion"
+  .
+
+bae:FAIR_0001061
+  rdfs:label "Hybrid Selection" ;
+  rdfs:subClassOf bae:FAIR_0001044 ;
+  obo:IAO_0000115 "Selection by hybridization in array or solution"
+  .
+
+bae:FAIR_0001062
+  rdfs:label "Reduced Representation" ;
+  rdfs:subClassOf bae:FAIR_0001044 ;
+  obo:IAO_0000115 "Reproducible genomic subsets, often generated by restriction fragment size selection, containing a manageable number of loci to facilitate re-sampling"
+  .
+
+bae:FAIR_0001063
+  rdfs:label "Restriction Digest" ;
+  rdfs:subClassOf bae:FAIR_0001044 ;
+  obo:IAO_0000115 "DNA fractionation using restriction enzymes"
+  .
+
+bae:FAIR_0001064
+  rdfs:label "5-methylcytidine antibody" ;
+  rdfs:subClassOf bae:FAIR_0001044 ;
+  obo:IAO_0000115 "Selection of methylated DNA fragments using an antibody raised against 5-methylcytosine or 5-methylcytidine (m5C)"
+  .
+
+bae:FAIR_0001065
+  rdfs:label "MBD2 protein methyl-CpG binding domain" ;
+  rdfs:subClassOf bae:FAIR_0001044 ;
+  obo:IAO_0000115 "Enrichment by methyl-CpG binding domain"
+  .
+
+bae:FAIR_0001066
+  rdfs:label "CAGE" ;
+  rdfs:subClassOf bae:FAIR_0001044 ;
+  obo:IAO_0000115 "Cap-analysis gene expression"
+  .
+
+bae:FAIR_0001067
+  rdfs:label "RACE" ;
+  rdfs:subClassOf bae:FAIR_0001044 ;
+  obo:IAO_0000115 "Rapid Amplification of cDNA Ends"
+  .
+
+bae:FAIR_0001068
+  rdfs:label "size fractionation" ;
+  rdfs:subClassOf bae:FAIR_0001044 ;
+  obo:IAO_0000115 "Physical selection of size appropriate targets"
+  .
+
+bae:FAIR_0001069
+  rdfs:label "Padlock probes capture method" ;
+  rdfs:subClassOf bae:FAIR_0001044 ;
+  obo:IAO_0000115 "Circularized oligonucleotide probes"
+  .
+
+bae:FAIR_0001070
+  rdfs:label "other" ;
+  rdfs:subClassOf bae:FAIR_0001044 ;
+  obo:IAO_0000115 "Other library enrichment, screening, or selection process (please include additional info in the “design description”)"
+  .
+
+bae:FAIR_0001071
+  rdfs:label "unspecified" ;
+  rdfs:subClassOf bae:FAIR_0001044 ;
+  obo:IAO_0000115 "Library enrichment, screening, or selection is not specified (please include additional info in the “design description”)"
+  .
+
+bae:FAIR_0001072
+  rdfs:label "cDNA_oligo_dT" ;
+  rdfs:subClassOf bae:FAIR_0001044 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001073
+  rdfs:label "cDNA_randomPriming" ;
+  rdfs:subClassOf bae:FAIR_0001044 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001074
+  rdfs:label "Inverse rRNA" ;
+  rdfs:subClassOf bae:FAIR_0001044 ;
+  obo:IAO_0000115 "depletion of ribosomal RNA by oligo hybridization"
+  .
+
+bae:FAIR_0001075
+  rdfs:label "Oligo-dT" ;
+  rdfs:subClassOf bae:FAIR_0001044 ;
+  obo:IAO_0000115 "enrichment of messenger RNA (mRNA) by hybridization to Oligo-dT"
+  .
+
+bae:FAIR_0001076
+  rdfs:label "PolyA" ;
+  rdfs:subClassOf bae:FAIR_0001044 ;
+  obo:IAO_0000115 "PolyA selection or enrichment for messenger RNA (mRNA); should replace cDNA enumeration"
+  .
+
+bae:FAIR_0001077
+  rdfs:label "repeat fractionation" ;
+  rdfs:subClassOf bae:FAIR_0001044 ;
+  obo:IAO_0000115 "Selection for less repetitive (and more gene rich) sequence through Cot filtration (CF) or other fractionation techniques based on DNA kinetics"
+  .
+
+bae:FAIR_0001078
+  rdfs:label "library layout" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001079
+  rdfs:label "paired end" ;
+  rdfs:subClassOf bae:FAIR_0001078 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001080
+  rdfs:label "single" ;
+  rdfs:subClassOf bae:FAIR_0001078 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001081
+  rdfs:label "LS454" ;
+  rdfs:subClassOf bao:BAO_0000697
+  .
+
+bae:FAIR_0001082
+  rdfs:label "ABI_SOLID" ;
+  rdfs:subClassOf bao:FAIR_0001081
+  .
+ 
+bae:FAIR_0001083
+  rdfs:label "BGISEQ" ;
+  rdfs:subClassOf bao:FAIR_0001081
+  .
+ 
+bae:FAIR_0001084
+  rdfs:label "CAPILLARY" ;
+  rdfs:subClassOf bao:FAIR_0001081
+  .
+ 
+bae:FAIR_0001085
+  rdfs:label "COMPLETE_GENOMICS" ;
+  rdfs:subClassOf bao:FAIR_0001081
+  .
+ 
+bae:FAIR_0001086
+  rdfs:label "HELICOS" ;
+  rdfs:subClassOf bao:FAIR_0001081
+  .
+ 
+bae:FAIR_0001087
+  rdfs:label "ILLUMINA" ;
+  rdfs:subClassOf bao:FAIR_0001081
+  .
+ 
+bae:FAIR_0001088
+  rdfs:label "ION_TORRENT" ;
+  rdfs:subClassOf bao:FAIR_0001081
+  .
+ 
+bae:FAIR_0001089
+  rdfs:label "OXFORD_NANOPORE" ;
+  rdfs:subClassOf bao:FAIR_0001081
+  .
+ 
+bae:FAIR_0001090
+  rdfs:label "PACBIO_SMRT" ;
+  rdfs:subClassOf bao:FAIR_0001081
+  .
+
+bae:FAIR_0001091
+  rdfs:label "454 GS" ;
+  rdfs:subClassOf bao:FAIR_0001081
+  .
+ 
+bae:FAIR_0001092
+  rdfs:label "454 GS 20" ;
+  rdfs:subClassOf bao:FAIR_0001081
+  .
+ 
+bae:FAIR_0001093
+  rdfs:label "454 GS FLX" ;
+  rdfs:subClassOf bao:FAIR_0001081
+  .
+ 
+bae:FAIR_0001094
+  rdfs:label "454 GS FLX+" ;
+  rdfs:subClassOf bao:FAIR_0001081
+  .
+ 
+bae:FAIR_0001095
+  rdfs:label "454 GS FLX Titanium" ;
+  rdfs:subClassOf bao:FAIR_0001081
+  .
+ 
+bae:FAIR_0001096
+  rdfs:label "454 GS Junior" ;
+  rdfs:subClassOf bao:FAIR_0001081
+  .
+ 
+ bae:FAIR_0001097
+  rdfs:label "Illumina" ;
+  rdfs:subClassOf bao:BAO_0000697
+  .
+ 
+ bae:FAIR_0001098
+  rdfs:label "HiSeq X Five" ;
+  rdfs:subClassOf bae:FAIR_0001097
+  .
+
+ bae:FAIR_0001099
+  rdfs:label "HiSeq X Ten" ;
+  rdfs:subClassOf bae:FAIR_0001097
+  .
+
+ bae:FAIR_0001100
+  rdfs:label "Illumina Genome Analyzer" ;
+  rdfs:subClassOf bae:FAIR_0001097
+  .
+
+ bae:FAIR_0001101
+  rdfs:label "Illumina Genome Analyzer II" ;
+  rdfs:subClassOf bae:FAIR_0001097
+  .
+
+ bae:FAIR_0001102
+  rdfs:label "Illumina Genome Analyzer IIx" ;
+  rdfs:subClassOf bae:FAIR_0001097
+  .
+
+ bae:FAIR_0001103
+  rdfs:label "Illumina HiScanSQ" ;
+  rdfs:subClassOf bae:FAIR_0001097
+  .
+  
+ bae:FAIR_0001104
+  rdfs:label "Illumina HiSeq 1000" ;
+  rdfs:subClassOf bae:FAIR_0001097
+  .
+
+ bae:FAIR_0001105
+  rdfs:label "Illumina HiSeq 1500" ;
+  rdfs:subClassOf bae:FAIR_0001097
+  .
+ bae:FAIR_0001106
+  rdfs:label "Illumina HiSeq 2000" ;
+  rdfs:subClassOf bae:FAIR_0001097
+  .
+
+ bae:FAIR_0001107
+  rdfs:label "Illumina HiSeq 2500" ;
+  rdfs:subClassOf bae:FAIR_0001097
+  .
+
+ bae:FAIR_0001108
+  rdfs:label "Illumina HiSeq 3000" ;
+  rdfs:subClassOf bae:FAIR_0001097
+  .
+
+ bae:FAIR_0001109
+  rdfs:label "Illumina HiSeq 4000" ;
+  rdfs:subClassOf bae:FAIR_0001097
+  .
+  
+ bae:FAIR_0001110
+  rdfs:label "Illumina iSeq 100" ;
+  rdfs:subClassOf bae:FAIR_0001097
+  .
+
+ bae:FAIR_0001111
+  rdfs:label "Illumina NovaSeq 6000" ;
+  rdfs:subClassOf bae:FAIR_0001097
+  .
+
+ bae:FAIR_0001112
+  rdfs:label "Illumina MiniSeq" ;
+  rdfs:subClassOf bae:FAIR_0001097
+  .
+
+ bae:FAIR_0001113
+  rdfs:label "Illumina MiSeq" ;
+  rdfs:subClassOf bae:FAIR_0001097
+  .
+
+ bae:FAIR_0001114
+  rdfs:label "NextSeq 500" ;
+  rdfs:subClassOf bae:FAIR_0001097
+  .
+
+ bae:FAIR_0001115
+  rdfs:label "NextSeq 550" ;
+  rdfs:subClassOf bae:FAIR_0001097
+  .
+
+bae:FAIR_0001116
+  rdfs:label "Helicos" ;
+  rdfs:subClassOf bao:BAO_0000697
+  .
+
+ bae:FAIR_0001117
+  rdfs:label "HeliScope" ;
+  rdfs:subClassOf bae:FAIR_0001116
+  .
+
+bae:FAIR_0001118
+  rdfs:label "ABI Solid" ;
+  rdfs:subClassOf bao:BAO_0000697
+  .
+
+bae:FAIR_0001119
+  rdfs:label "AB 5500 Genetic Analyzer" ;
+  rdfs:subClassOf bae:FAIR_0001118
+  .
+
+bae:FAIR_0001120
+  rdfs:label "AB 5500xl Genetic Analyzer" ;
+  rdfs:subClassOf bae:FAIR_0001118
+  .
+
+bae:FAIR_0001121
+  rdfs:label "AB 5500x-Wl Genetic Analyzer" ;
+  rdfs:subClassOf bae:FAIR_0001118
+  .
+
+bae:FAIR_0001122
+  rdfs:label "AB SOLiD 3 Plus System" ;
+  rdfs:subClassOf bae:FAIR_0001118
+  .
+
+bae:FAIR_0001123
+  rdfs:label "AB SOLiD 4 System" ;
+  rdfs:subClassOf bae:FAIR_0001118
+  .
+
+bae:FAIR_0001124
+  rdfs:label "AB SOLiD 4hq System" ;
+  rdfs:subClassOf bae:FAIR_0001118
+  .
+
+bae:FAIR_0001125
+  rdfs:label "AB SOLiD PI System" ;
+  rdfs:subClassOf bae:FAIR_0001118
+  .
+
+bae:FAIR_0001126
+  rdfs:label "AB SOLiD System" ;
+  rdfs:subClassOf bae:FAIR_0001118
+  .
+
+bae:FAIR_0001127
+  rdfs:label "AB SOLiD System 2.0" ;
+  rdfs:subClassOf bae:FAIR_0001118
+  .
+
+bae:FAIR_0001128
+  rdfs:label "AB SOLiD System 3.0" ;
+  rdfs:subClassOf bae:FAIR_0001118
+  .
+
+bae:FAIR_0001129
+  rdfs:label "Complete Genomics" ;
+  rdfs:subClassOf bao:BAO_0000697
+  .
+ 
+bae:FAIR_0001130
+  rdfs:label "Complete Genomics" ;
+  rdfs:subClassOf bae:FAIR_0001129
+  .
+
+bae:FAIR_0001131
+  rdfs:label "PacBio SMRT" ;
+  rdfs:subClassOf bao:BAO_0000697
+  .
+ 
+bae:FAIR_0001132
+  rdfs:label "PacBio RS" ;
+  rdfs:subClassOf bae:FAIR_0001131
+  .
+
+bae:FAIR_0001133
+  rdfs:label "PacBio RS II" ;
+  rdfs:subClassOf bae:FAIR_0001131
+  .
+
+bae:FAIR_0001134
+  rdfs:label "Pac Bio Sequel" ;
+  rdfs:subClassOf bae:FAIR_0001131
+  .
+
+bae:FAIR_0001135
+  rdfs:label "Ion Torrent" ;
+  rdfs:subClassOf bao:BAO_0000697
+  .
+ 
+bae:FAIR_0001136
+  rdfs:label "Ion Torrent PGM" ;
+  rdfs:subClassOf bae:FAIR_0001135
+  .
+
+bae:FAIR_0001137
+  rdfs:label "Ion Torrent Proton" ;
+  rdfs:subClassOf bae:FAIR_0001135
+  .
+
+bae:FAIR_0001138
+  rdfs:label "Ion Torrent S5 XL" ;
+  rdfs:subClassOf bae:FAIR_0001135
+  .
+
+bae:FAIR_0001139
+  rdfs:label "Ion Torrent S5" ;
+  rdfs:subClassOf bae:FAIR_0001135
+  .
+
+bae:FAIR_0001140
+  rdfs:label "Capilliary" ;
+  rdfs:subClassOf bao:BAO_0000697
+  .
+ 
+bae:FAIR_0001141
+  rdfs:label "AB 310 Genetic Analyzer" ;
+  rdfs:subClassOf bae:FAIR_0001140
+  .
+
+bae:FAIR_0001142
+  rdfs:label "AB 3130 Genetic Analyzer" ;
+  rdfs:subClassOf bae:FAIR_0001140
+  .
+
+bae:FAIR_0001143
+  rdfs:label "AB 3130xL Genetic Analyzer" ;
+  rdfs:subClassOf bae:FAIR_0001140
+  .
+
+bae:FAIR_0001144
+  rdfs:label "AB 3500 Genetic Analyzer" ;
+  rdfs:subClassOf bae:FAIR_0001140
+  .
+
+bae:FAIR_0001145
+  rdfs:label "AB 3500xL Genetic Analyzer" ;
+  rdfs:subClassOf bae:FAIR_0001140
+  .
+
+bae:FAIR_0001146
+  rdfs:label "AB 3730 Genetic Analyzer" ;
+  rdfs:subClassOf bae:FAIR_0001140
+  .
+
+bae:FAIR_0001147
+  rdfs:label "AB 3730xL Genetic Analyzer" ;
+  rdfs:subClassOf bae:FAIR_0001140
+  .
+
+bae:FAIR_0001148
+  rdfs:label "Oxford Nanopore" ;
+  rdfs:subClassOf bao:BAO_0000697
+  .
+ 
+bae:FAIR_0001149
+  rdfs:label "GridION" ;
+  rdfs:subClassOf bae:FAIR_0001148
+  .
+
+bae:FAIR_0001150
+  rdfs:label "MinION" ;
+  rdfs:subClassOf bae:FAIR_0001148
+  .
+
+bae:FAIR_0001151
+  rdfs:label "PromethION" ;
+  rdfs:subClassOf bae:FAIR_0001148
+  .
+
+bae:FAIR_0001152
+  rdfs:label "BGISEQ" ;
+  rdfs:subClassOf bao:BAO_0000697
+  .
+ 
+bae:FAIR_0001153
+  rdfs:label "BGISEQ-500" ;
+  rdfs:subClassOf bae:FAIR_0001153
+  .
+
+bae:FAIR_0001154
+  rdfs:label "cell culture" ;
+  rdfs:subClassOf bao:BAO_0000019
+  .
+
+bae:FAIR_0001155
+  rdfs:label "mixed culture" ;
+  rdfs:subClassOf bao:BAO_0000019
+  .
+
+bae:FAIR_0001156
+  rdfs:label "metagenomic assembly" ;
+  rdfs:subClassOf bao:BAO_0000019
+  .
+
+bae:FAIR_0001157
+  rdfs:label "biosample type" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  .
+
+bae:FAIR_0001158
+  rdfs:label "microbe" ;
+  rdfs:subClassOf bae:FAIR_0001157
+  .
+
+bae:FAIR_0001159
+  rdfs:label "model organism/animal" ;
+  rdfs:subClassOf bae:FAIR_0001157
+  .
+
+bae:FAIR_0001160
+  rdfs:label "invertebrate" ;
+  rdfs:subClassOf bae:FAIR_0001157
+  .
+
+bae:FAIR_0001161
+  rdfs:label "human" ;
+  rdfs:subClassOf bae:FAIR_0001157
+  .
+
+bae:FAIR_0001162
+  rdfs:label "plant" ;
+  rdfs:subClassOf bae:FAIR_0001157
+  .
+
+bae:FAIR_0001163
+  rdfs:label "virus" ;
+  rdfs:subClassOf bae:FAIR_0001157
+  .
+
+bae:FAIR_0001164
+  rdfs:label "assay identifier" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001165
+  rdfs:label "assay type" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001166
+  rdfs:label "knockdown genes" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001167
+  rdfs:label "experimental description" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001168
+  rdfs:label "biological question" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001169
+  rdfs:label "protocol and design" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001170
+  rdfs:label "pre/post treatment" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001171
+  rdfs:label "biomaterial manipulations" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001172
+  rdfs:label "cells per well" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001173
+  rdfs:label "assay reagent" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001174
+  rdfs:label "instrument" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001175
+  rdfs:label "delivery" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001176
+  rdfs:label "cell confluence" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001177
+  rdfs:label "complexing protocol" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001178
+  rdfs:label "reagent" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001179
+  rdfs:label "final concentration" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001180
+  rdfs:label "plate information" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001181
+  rdfs:label "media changes" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001182
+  rdfs:label "data analysis" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001183
+  rdfs:label "bioactivity outcome" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001184
+  rdfs:label "artefacts" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001185
+  rdfs:label "data filtering" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001186
+  rdfs:label "analysis software" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001187
+  rdfs:label "data columns" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001188
+  rdfs:label "data types" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001189
+  rdfs:label "quantitative data" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001190
+  rdfs:label "qualitative data" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001191
+  rdfs:label "purpose/goal/hypothesis" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001192
+  rdfs:label "experiment variables" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001193
+  rdfs:label "conclusions" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001194
+  rdfs:label "quality control" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001195
+  rdfs:label "material" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001196
+  rdfs:label "source/organism/location" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001197
+  rdfs:label "treatment" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001198
+  rdfs:label "reagent/analyte/detector/reporter" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001199
+  rdfs:label "list-mode data" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001200
+  rdfs:label "compensation" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001201
+  rdfs:label "gating" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001202
+  rdfs:label "descriptive statistics" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001203
+  rdfs:label "instrument identification" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001204
+  rdfs:label "fluidics configuration" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001205
+  rdfs:label "optical configuration" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001206
+  rdfs:label "electronic configuration" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001207
+  rdfs:label "experimental/control groups" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001208
+  rdfs:label "number in group" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001209
+  rdfs:label "dissection" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001210
+  rdfs:label "processing procedure" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001211
+  rdfs:label "frozen" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001212
+  rdfs:label "fixed" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001213
+  rdfs:label "sample storage" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001214
+  rdfs:label "procedure/instrumentation" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001215
+  rdfs:label "extraction kit" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001216
+  rdfs:label "DNase or RNase treatment" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001217
+  rdfs:label "contamination assessment" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001218
+  rdfs:label "quantification" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001219
+  rdfs:label "instrument and method" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001220
+  rdfs:label "RNA integrity" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001221
+  rdfs:label "electrophoresis" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001222
+  rdfs:label "reaction conditions" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001223
+  rdfs:label "priming oligonucleotide" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001224
+  rdfs:label "reverse transcriptase" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001225
+  rdfs:label "temperature and time" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001226
+  rdfs:label "gene symbol" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001227
+  rdfs:label "virtual specificity screen" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001228
+  rdfs:label "primer location" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001229
+  rdfs:label "splice variants" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001230
+  rdfs:label "primer sequences" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001231
+  rdfs:label "modifications" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001232
+  rdfs:label "reaction conditions" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001233
+  rdfs:label "primer" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001234
+  rdfs:label "polymerase" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001235
+  rdfs:label "buffer/kit" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001236
+  rdfs:label "additives" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001237
+  rdfs:label "thermocycling" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001238
+  rdfs:label "instrument manufacturer" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001239
+  rdfs:label "specificity" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001240
+  rdfs:label "calibration curves" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001241
+  rdfs:label "PCF efficiency" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001242
+  rdfs:label "analysis program" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001243
+  rdfs:label "Cq determination" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001244
+  rdfs:label "repeatability" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001245
+  rdfs:label "experiment description" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001246
+  rdfs:label "assay types" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001247
+  rdfs:label "experimental design" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001248
+  rdfs:label "experimental factors" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001249
+  rdfs:label "attributes of the individual" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001250
+  rdfs:label "physiologic state" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001251
+  rdfs:label "relevant exogenous factors" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001252
+  rdfs:label "anatomic source of speciments" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001253
+  rdfs:label "assay preparation protocol" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001254
+  rdfs:label "reporter identification" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001255
+  rdfs:label "protocol for obtaining" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001256
+  rdfs:label "detection method" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001257
+  rdfs:label "staining protocol" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001258
+  rdfs:label "positive/negative controls" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001259
+  rdfs:label "images for each assay" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001260
+  rdfs:label "detection method" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001261
+  rdfs:label "structural units" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001262
+  rdfs:label "intensity scale" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001263
+  rdfs:label "results in tabular form" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001264
+  rdfs:label "construction kit" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001265
+  rdfs:label "biomaterial provider" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001266
+  rdfs:label "geographic origin" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001267
+  rdfs:label "strain/isolate" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001268
+  rdfs:label "host" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001269
+  rdfs:label "sex" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001270
+  rdfs:label "male" ;
+  rdfs:subClassOf bae:FAIR_0001269 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001271
+  rdfs:label "female" ;
+  rdfs:subClassOf bae:FAIR_0001269 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001272
+  rdfs:label "tissue" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0001273
+  rdfs:label "phenotype" ;
+  rdfs:subClassOf bae:FAIR_0001000 ;
+  obo:IAO_0000115 ""
+  .
