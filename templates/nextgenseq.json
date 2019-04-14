@@ -4,7 +4,7 @@
     {
         "name": "NextGen Sequencing",
         "descr": "Next Generation Sequencing, based on NCBI Sequence Read Archive https://www.ncbi.nlm.nih.gov/sra/",
-        "groupURI": "http://www.bioassayexpress.org/bae#FAIR_0000006",
+        "groupURI": "http://www.bioassayexpress.org/bae#FAIR_0000001",
         "assignments": [],
         "subGroups": 
         [
@@ -139,6 +139,13 @@
                                 "spec": "container"
                             }
                         ]
+                    }, 
+                    {
+                        "name": "geo ID",
+                        "descr": "GEO ID (Gene Expression Omnibus)",
+                        "propURI": "http://www.bioassayexpress.org/bae#FAIR_0000157",
+                        "suggestions": "string",
+                        "values": []
                     }
                 ],
                 "subGroups": []

@@ -9,7 +9,7 @@
 @prefix obo:   <http://purl.obolibrary.org/obo/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 
-# ------------ property & group terms ------------
+# ------------------------------------ property & group terms ------------------------------------
 
 bae:FAIR_0000001
   rdf:type owl:DatatypeProperty ;
@@ -941,7 +941,19 @@ bae:FAIR_0000155
   obo:IAO_0000115 ""
   .
     
-# ------------ annotation terms ------------
+bae:FAIR_0000156
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has detected protein location" ;
+  obo:IAO_0000115 ""
+  .
+
+bae:FAIR_0000157
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has geo ID" ;
+  obo:IAO_0000115 ""
+  .
+
+# ------------------------------------ annotation terms ------------------------------------
 
 bae:FAIR_0001000
   rdfs:label "custom FAIR terms" ;

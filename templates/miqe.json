@@ -852,7 +852,7 @@
                         ]
                     }, 
                     {
-                        "name": "PCF efficiency",
+                        "name": "PCR efficiency",
                         "descr": "PCR efficiency calculated from slope",
                         "propURI": "http://www.bioassayexpress.org/bae#FAIR_0000127",
                         "suggestions": "full",

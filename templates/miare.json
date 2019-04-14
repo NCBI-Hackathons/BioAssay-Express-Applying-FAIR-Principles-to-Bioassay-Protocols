@@ -49,9 +49,9 @@
                                 "spec": "container"
                             }, 
                             {
-                                "uri": "http://www.bioassayexpress.org/bae#FAIR_0001165",
-                                "name": "assay type",
-                                "descr": "",
+                                "uri": "http://www.bioassayontology.org/bao#BAO_0000029",
+                                "name": "assay screening campaign stage",
+                                "descr": "The assay stage describes the purpose of the assay in an assay campaign.  Assay stage also relates to the order of assays in a screening campaign.  For example the primary assay, which is performed first, identifies hits. The primary hits are then confirmed in a confirmatory assay.  Subsequent secondary assays are run to eliminate compounds that are not of interest or to confirm hits using an alternate design / technology, or to further characterize compounds.\nWhether an assay is run in single concentration or concentration response is defined in the class 'assay measurement throughput quality'.  For example primary assays are typically run in single concentration with single measurements. However, the NCGC runs qHTS primary assays as concentration-response assays.",
                                 "spec": "container"
                             }
                         ]

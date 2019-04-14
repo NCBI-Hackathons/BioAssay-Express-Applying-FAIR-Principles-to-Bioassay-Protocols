@@ -108,44 +108,119 @@
                 "assignments": 
                 [
                     {
-                        "name": "material",
-                        "descr": "",
-                        "propURI": "http://www.bioassayexpress.org/bae#FAIR_0000030",
-                        "suggestions": "full",
-                        "values": 
-                        [
-                            {
-                                "uri": "http://www.bioassayontology.org/bat#Absence",
-                                "name": "absence",
-                                "descr": "A group of annotations that explain why an annotation is missing, when it should not be.",
-                                "spec": "container"
-                            }, 
-                            {
-                                "uri": "http://www.bioassayexpress.org/bae#FAIR_0001195",
-                                "name": "material",
-                                "descr": "",
-                                "spec": "container"
-                            }
-                        ]
-                    }, 
-                    {
-                        "name": "source/organism/location",
+                        "name": "source",
                         "descr": "",
                         "propURI": "http://www.bioassayexpress.org/bae#FAIR_0000031",
                         "suggestions": "full",
                         "values": 
                         [
                             {
+                                "uri": "http://dto.org/DTO/DTO_000",
+                                "name": "BRENDA tissues and cell lines",
+                                "descr": "",
+                                "spec": "container"
+                            }, 
+                            {
+                                "uri": "http://www.bioassayontology.org/bat#Absence",
+                                "name": "absence",
+                                "descr": "A group of annotations that explain why an annotation is missing, when it should not be.",
+                                "spec": "container"
+                            }
+                        ]
+                    }, 
+                    {
+                        "name": "organism",
+                        "descr": "",
+                        "propURI": "http://www.bioassayontology.org/bao#BAO_0002921",
+                        "suggestions": "full",
+                        "values": 
+                        [
+                            {
+                                "uri": "http://www.bioassayontology.org/bao#BAO_0000551",
+                                "name": "organism",
+                                "descr": "The organism related to the target / meta-target of the bioassay. It includes both bacterium and eukaryote.",
+                                "spec": "container"
+                            }, 
+                            {
+                                "uri": "http://www.bioassayontology.org/bat#Absence",
+                                "name": "absence",
+                                "descr": "A group of annotations that explain why an annotation is missing, when it should not be.",
+                                "spec": "container"
+                            }
+                        ]
+                    }, 
+                    {
+                        "name": "age",
+                        "descr": "",
+                        "propURI": "http://www.bioassayexpress.org/bae#FAIR_0000017",
+                        "suggestions": "full",
+                        "values": 
+                        [
+                            {
+                                "uri": "http://www.bioassayontology.org/bat#Absence",
+                                "name": "absence",
+                                "descr": "A group of annotations that explain why an annotation is missing, when it should not be.",
+                                "spec": "container"
+                            }
+                        ]
+                    }, 
+                    {
+                        "name": "sex",
+                        "descr": "",
+                        "propURI": "http://www.bioassayexpress.org/bae#FAIR_0000018",
+                        "suggestions": "full",
+                        "values": 
+                        [
+                            {
                                 "uri": "http://www.bioassayontology.org/bat#Absence",
                                 "name": "absence",
                                 "descr": "A group of annotations that explain why an annotation is missing, when it should not be.",
                                 "spec": "container"
                             }, 
                             {
-                                "uri": "http://www.bioassayexpress.org/bae#FAIR_0001196",
-                                "name": "source/organism/location",
+                                "uri": "http://www.bioassayexpress.org/bae#FAIR_0001269",
+                                "name": "sex",
                                 "descr": "",
                                 "spec": "container"
+                            }
+                        ]
+                    }, 
+                    {
+                        "name": "disease",
+                        "descr": "Disease targets that the assay is designed to affect. This is a more general term than the specific biological target.",
+                        "propURI": "http://www.bioassayontology.org/bao#BAO_0002848",
+                        "suggestions": "full",
+                        "values": 
+                        [
+                            {
+                                "uri": "http://purl.obolibrary.org/obo/DOID_4",
+                                "name": "Disease",
+                                "descr": "A disease is a disposition (i) to undergo pathological processes that (ii) exists in an organism because of one or more disorders in that organism.\n",
+                                "spec": "container"
+                            }, 
+                            {
+                                "uri": "http://www.bioassayontology.org/bao#BAO_0003114",
+                                "name": "assay biology component",
+                                "descr": "",
+                                "spec": "exclude"
+                            }, 
+                            {
+                                "uri": "http://www.bioassayontology.org/bat#Absence",
+                                "name": "absence",
+                                "descr": "A group of annotations that explain why an annotation is missing, when it should not be.",
+                                "spec": "container"
+                            }, 
+                            {
+                                "uri": "http://www.bioassayontology.org/bat#NotDetermined",
+                                "name": "not determined",
+                                "descr": "The measurement was not made.",
+                                "spec": "exclude"
+                            }, 
+                            {
+                                "uri": "http://www.bioassayontology.org/bat#SeeGeneID",
+                                "name": "see Gene ID",
+                                "descr": "The target is present in the Gene ID section, but needs to be mapped to a formal ontology.",
+                                "spec": "exclude"
                             }
                         ]
                     }, 
@@ -187,6 +262,48 @@
                                 "uri": "http://www.bioassayexpress.org/bae#FAIR_0001198",
                                 "name": "reagent/analyte/detector/reporter",
                                 "descr": "",
+                                "spec": "container"
+                            }
+                        ]
+                    }, 
+                    {
+                        "name": "detected protein location",
+                        "descr": "",
+                        "propURI": "http://www.bioassayexpress.org/bae#FAIR_0000156",
+                        "suggestions": "full",
+                        "values": 
+                        [
+                            {
+                                "uri": "http://www.bioassayontology.org/bat#Absence",
+                                "name": "absence",
+                                "descr": "A group of annotations that explain why an annotation is missing, when it should not be.",
+                                "spec": "container"
+                            }, 
+                            {
+                                "uri": "http://www.bioassayontology.org/bao#BAO_0003052",
+                                "name": "cellular component",
+                                "descr": "The part of a cell or its extracellular environment in which a gene product is located. A gene product may be located in one or more parts of a cell and its location may be as specific as a particular macromolecular complex, that is, a stable, persistent association of macromolecules that function together (from Gene Ontology).",
+                                "spec": "item"
+                            }
+                        ]
+                    }, 
+                    {
+                        "name": "antibody/target",
+                        "descr": "Protein identity, from the NCBI reference set.",
+                        "propURI": "http://www.bioassayontology.org/bao#BAX_0000012",
+                        "suggestions": "full",
+                        "values": 
+                        [
+                            {
+                                "uri": "http://www.bioassayontology.org/taxon#Root",
+                                "name": "Faux ProteinID",
+                                "descr": "Temporary ontology terms for NCBI Protein GI",
+                                "spec": "container"
+                            }, 
+                            {
+                                "uri": "http://www.bioassayontology.org/bat#Absence",
+                                "name": "absence",
+                                "descr": "A group of annotations that explain why an annotation is missing, when it should not be.",
                                 "spec": "container"
                             }
                         ]
