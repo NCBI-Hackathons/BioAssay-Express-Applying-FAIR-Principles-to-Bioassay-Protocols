@@ -35,5 +35,15 @@ The fully list of curated assays can be downloaded at any time from the page [ht
 
 ## CONCLUSIONS
 
-To be concluded...
+Reports on the curation efforts for this hackathon:
 
+
+![](img/report1.png)
+
+![](img/report2.png)
+
+![](img/report3.png)
+
+![](img/report4.png)
+
+![](img/report5.png)
