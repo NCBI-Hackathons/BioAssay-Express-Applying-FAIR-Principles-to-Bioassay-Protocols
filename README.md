@@ -35,8 +35,15 @@ The fully list of curated assays can be downloaded at any time from the page [ht
 
 ## CONCLUSIONS
 
-Reports on the curation efforts for this hackathon:
+Reports on the curation efforts for this hackathon are shown below.
 
+43 assays were curated, for the whole template collection. About half of them are for Next Gen Sequencing. Some fields are generally well represented, and easy to find. Others are generally absent, or were not obvious to us.
+
+![](img/scorecard.png)
+
+367 provisional terms were created during the exercise. Some of the fields had little/no preexisting ontology options, while others were already well populated.
+
+Several real-time hacks on the service itself were implemented and applied before & after the hackathon (e.g. improving the report page). Numerous software improvements (and a few glitches) were found and added to our to-do list!
 
 ![](img/report1.png)
 
