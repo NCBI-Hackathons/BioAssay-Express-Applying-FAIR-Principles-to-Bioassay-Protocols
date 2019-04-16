@@ -16,6 +16,14 @@ In addition, the BioAsssay Express API can now be explored using SmartAPI [http:
 
 ![](img/homepage_snap.png)
 
+## ABOUT US
+
+[Collaborative Drug Discovery](https://collaborativedrug.com)
+
+* Samantha Jeschonek
+* Alex Clark
+* Marcin Pilarcyk
+
 ## RESULTS
 
 The 5 templates are stored on this GitHub repository in [templates/](https://github.com/NCBI-Hackathons/BioAssay-Express-Applying-FAIR-Principles-to-Bioassay-Protocols/tree/master/templates). Additional ontologies to support these templates are in [ontology/](https://github.com/NCBI-Hackathons/BioAssay-Express-Applying-FAIR-Principles-to-Bioassay-Protocols/tree/master/ontology). The BioAssay Template Editor is open source [see GitHub/bioassay-template](https://github.com/cdd/bioassay-template).
